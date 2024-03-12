@@ -1,0 +1,26 @@
+.focus_module_number_counters {
+    text-align: center
+}
+
+.focus_module_number_counters-top {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+
+.focus_module_number_counters .counter_icon svg {
+    height: 30px;
+    margin-top: 10px
+}
+
+.focus_module_number_counter {
+    font-size: 48px;
+    font-weight: 700
+}
+
+@media (max-width: 767px) {
+    .focus_module_number_counter {
+        font-size: 36px
+    }
+}

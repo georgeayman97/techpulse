@@ -1,0 +1,75 @@
+.mmc-grid-inner {
+    gap: 0;
+    margin: 0 auto;
+    max-width: 800px
+}
+
+.focus_module_calendar_item {
+    align-items: center;
+    display: flex;
+    padding: 50px 0;
+    position: relative
+}
+
+.focus_module_calendar_item:after {
+    border-radius: 8px;
+    bottom: 0;
+    content: "";
+    height: 4px;
+    left: calc(50% - 15px);
+    position: absolute;
+    width: 30px
+}
+
+.focus_module_calendar-left_container {
+    align-items: center;
+    display: flex;
+    flex: 0 0 auto;
+    height: 120px
+}
+
+.focus_module_calendar_img {
+    display: block;
+    font-size: 0;
+    height: auto;
+    width: 180px
+}
+
+.focus_module_calendar_title_container {
+    flex: 1 1 auto
+}
+
+.focus_module_calendar_date {
+    font-weight: 700
+}
+
+.focus_module_calendar_title {
+    font-size: 24px
+}
+
+.focus_module_calendar_note {
+    font-size: 16px;
+    margin-bottom: 0
+}
+
+.focus_module_calendar_item .button {
+    flex: 0 0 auto
+}
+
+@media (max-width: 767px) {
+    .focus_module_calendar_item {
+        align-items: flex-start;
+        flex-direction: column;
+        flex-wrap: wrap
+    }
+
+    .focus_module_calendar-left_container {
+        flex-direction: column;
+        gap: 30px;
+        height: auto
+    }
+
+    .focus_module_calendar_date {
+        text-align: left
+    }
+}
