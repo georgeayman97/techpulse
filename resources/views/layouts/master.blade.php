@@ -59,12 +59,14 @@
             width: 1px
         }
     </style>
+
     <link rel="stylesheet"
           href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet"
           href="{{ asset('assets/css/theme-overrides.css') }}">
     <link rel="stylesheet"
           href="{{ asset('assets/css/website-header.css') }}">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <style>
         @media (max-width: 767px) {
             #hs_cos_wrapper_header-top-dnd_area_101-module-1 .focus_module_website_h,
@@ -88,6 +90,27 @@
     <link rel="stylesheet"
           href="{{ asset('assets/css/hero-slider.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/cdn-splide.css') }}">
+    <style>
+        .clients {
+            padding: 12px 0;
+        }
+
+        .clients #client-logos {
+            display: flex;
+            justify-content: space-around; /* Adjust alignment as needed */
+            flex-wrap: wrap;
+        }
+
+        .clients img {
+            width: 120px; /* Adjust logo width as needed */
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+        }
+
+        .clients img:hover {
+            filter: grayscale(0%);
+        }
+    </style>
     <style>
         #hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1 .focus_hero_slide_inner {
             padding: 0px 100px 0 100px;
@@ -117,7 +140,7 @@
         }
 
         #hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1 .mhsb1 {
-            background-color: #E24545;
+            background-color: #37517e;
         }
 
     </style>
@@ -131,7 +154,7 @@
         }
 
         #hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1 .mhsb2 {
-            background-color: #336FDC;
+            background-color: #37517e;
         }
 
     </style>
@@ -145,7 +168,7 @@
         }
 
         #hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1 .mhsb3 {
-            background-color: #4EC866;
+            background-color: #37517e;
         }
 
     </style>
@@ -195,7 +218,7 @@
         }
 
         #hs_cos_wrapper_dnd_area_101-dnd_partial-8-module-1 .focus_module_cta_section-lens {
-            background: rgba(0, 0, 0, 0%);
+            background: #37517e;
         }
 
         #hs_cos_wrapper_dnd_area_101-dnd_partial-8-module-1 .focus_module_cta_section-title {
@@ -411,7 +434,7 @@
         }
 
         .dnd_area_101-row-3-background-color {
-            background-color: rgba(226, 69, 69, 1) !important;
+            background-color: #37517e;
         }
 
         .dnd_area_101-row-5-background-color {
@@ -585,6 +608,10 @@
             }
         }
     </style>
+
+    <link href="{{ asset('assets/arsha/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/arsha/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/arsha/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -598,9 +625,30 @@
 
     <x-footer/>
 </div>
-
-
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 <script src="{{ asset('assets/js/main.js') }}"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const clientLogos = [
+            'client-1.png',
+            'client-2.png',
+            'client-3.png',
+            'client-4.png',
+            'client-5.png',
+            'client-6.png'
+        ];
+
+        const clientLogosContainer = document.getElementById('client-logos');
+
+        clientLogos.forEach(function (logo) {
+            const img = document.createElement('img');
+            img.src = `assets/img/clients/${logo}`;
+            clientLogosContainer.appendChild(img);
+        });
+    });
+</script>
 <script>
     var hsVars = hsVars || {};
     hsVars['language'] = 'en';
@@ -614,5 +662,20 @@
     src="{{ asset('assets/js/slider.min.js') }}"></script>
 <script
     src="{{ asset('assets/js/numbers-counters.min.js') }}"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+
+
+<!-- Vendor JS Files -->
+<script src="{{ asset('assets/arsha/assets/vendor/aos/aos.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+<script src="{{ asset('assets/arsha/assets/vendor/php-email-form/validate.js') }}"></script>
+
+<!-- Template Main JS File -->
+<script src="{{ asset('assets/arsha/assets/js/main.js') }}"></script>
+
 </body>
 </html>

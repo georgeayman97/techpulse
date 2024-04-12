@@ -1,7 +1,8 @@
 @extends('layouts.master')
+@section('title','TechPulse Solutions')
 @section('content')
     <main id="main-content" class="body-container-wrapper">
-        <div class="container-fluid body-container body-container--home">
+        <div class=" body-container body-container--home">
             <div class="row-fluid-wrapper">
                 <div class="row-fluid">
                     <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0"
@@ -61,7 +62,8 @@
                                                                                 propel your business forward.</p>
                                                                             <div class="hero-buttons">
                                                                                 <a class="button focus_primary_button"
-                                                                                   href=""> Discover </a>
+                                                                                   href="{{ route('about-us') }}">
+                                                                                    Discover </a>
                                                                             </div>
                                                                         </div>
                                                                         <img class="focus_hero_slide-image"
@@ -72,71 +74,69 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="splide__slide">
-                                                            <div class="focus_hero_slide mhsb2">
+                                                            <div class="focus_hero_slide mhsb1">
                                                                 <div class="focus_hero_lens"></div>
                                                                 <div class="content-wrapper">
                                                                     <div class="focus_hero_slide_inner">
                                                                         <div class="focus_hero_slide_inner-text">
-                                                                            <h1 class="focus_hero_title mhst2">We Are
+                                                                            <h1 class="focus_hero_title mhst1">We Are
                                                                                 Creative</h1>
-                                                                            <p class="mhsp2">At TechPulse Solutions,
+                                                                            <p class="mhsp1">At TechPulse Solutions,
                                                                                 creativity drives our innovation. We
                                                                                 specialize in creating captivating
                                                                                 digital experiences that resonate with
                                                                                 your audience.</p>
                                                                             <div class="hero-buttons">
                                                                                 <a class="button focus_primary_button"
-                                                                                   href=""> Discover </a>
+                                                                                   href="{{ route('about-us') }}">
+                                                                                    Discover </a>
                                                                             </div>
                                                                         </div>
                                                                         <img class="focus_hero_slide-image"
                                                                              src="{{ asset('assets/img/slide2.png') }}"
-                                                                             style="max-width: 442px;"
-                                                                             alt="img-002" loading="lazy" width="442"
+                                                                             alt="img-001" loading="lazy" width="400"
                                                                              height="348">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                         <div class="splide__slide">
-                                                            <div class="focus_hero_slide mhsb3">
+                                                            <div class="focus_hero_slide mhsb1">
                                                                 <div class="focus_hero_lens"></div>
                                                                 <div class="content-wrapper">
                                                                     <div class="focus_hero_slide_inner">
                                                                         <div class="focus_hero_slide_inner-text">
-                                                                            <h1 class="focus_hero_title mhst3">We Are
+                                                                            <h1 class="focus_hero_title mhst1">We Are
                                                                                 Flexible</h1>
-                                                                            <p class="mhsp3">At TechPulse Solutions,
+                                                                            <p class="mhsp1">At TechPulse Solutions,
                                                                                 flexibility is key to our success. We
                                                                                 adapt to your needs, ensuring seamless
                                                                                 collaboration and delivering tailored
                                                                                 solutions on time, every time.</p>
                                                                             <div class="hero-buttons">
                                                                                 <a class="button focus_primary_button"
-                                                                                   href=""> Apply now </a>
+                                                                                   href="{{ route('about-us') }}">
+                                                                                    Discover </a>
                                                                             </div>
                                                                         </div>
                                                                         <img class="focus_hero_slide-image"
                                                                              src="{{ asset('assets/img/slide3.png') }}"
-                                                                             alt="img-003" loading="lazy" width="400"
+                                                                             alt="img-001" loading="lazy" width="400"
                                                                              height="348">
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="splide__slide">
-                                                            <div class="focus_hero_slide mhsb4"
-                                                                 style="background-color: #007bff;">
+                                                            <div class="focus_hero_slide mhsb1">
                                                                 <div class="focus_hero_lens"></div>
                                                                 <div class="content-wrapper">
                                                                     <div class="focus_hero_slide_inner">
                                                                         <div class="focus_hero_slide_inner-text">
-                                                                            <h1 class="focus_hero_title mhst4">Crafting
+                                                                            <h1 class="focus_hero_title mhst1">Crafting
                                                                                 Engaging Apps</h1>
-                                                                            <p class="mhsp4">At TechPulse Solutions, we
+                                                                            <p class="mhsp1">At TechPulse Solutions, we
                                                                                 specialize in creating dynamic websites
                                                                                 and mobile apps. Let us transform your
                                                                                 ideas into innovative digital solutions
@@ -144,13 +144,12 @@
                                                                             <div class="hero-buttons">
                                                                                 <a class="button focus_primary_button"
                                                                                    href="{{ route('about-us') }}">
-                                                                                    Discover
-                                                                                    More </a>
+                                                                                    Discover </a>
                                                                             </div>
                                                                         </div>
                                                                         <img class="focus_hero_slide-image"
                                                                              src="{{ asset('assets/img/slide4.png') }}"
-                                                                             alt="img-004" loading="lazy" width="400"
+                                                                             alt="img-001" loading="lazy" width="400"
                                                                              height="348">
                                                                     </div>
                                                                 </div>
@@ -167,7 +166,19 @@
                                 <!--end widget-span -->
                             </div>
                             <!--end row-->
+                            <!-- ======= Clients Section ======= -->
+                            <section id="clients" class="clients section-bg">
+                                <div class="container">
+
+                                    <div class="row" id="client-logos">
+                                        <!-- Client logos will be dynamically added here -->
+                                    </div>
+
+                                </div>
+                            </section>
+                            <!-- End Clients Section -->
                         </div>
+
                         <!--end row-wrapper -->
                         <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section">
                             <div class="row-fluid ">
@@ -353,180 +364,7 @@
                             <!--end row-->
                         </div>
                         <!--end row-wrapper -->
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area_101-dnd_partial-3-row-0-background-color dnd_area_101-dnd_partial-3-row-0-padding">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-cell dnd-column" style=""
-                                     data-widget-type="cell" data-x="0" data-w="12">
-                                    <div
-                                        class="row-fluid-wrapper row-depth-1 row-number-2 dnd_area_101-dnd_partial-3-column-1-row-0-margin dnd-row">
-                                        <div class="row-fluid ">
-                                            <div class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                 style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                                                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-2"
-                                                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                     style="" data-hs-cos-general-type="widget"
-                                                     data-hs-cos-type="module">
-                                                    <div class="focus_module_fancy_header_container focus_centered">
-                                                        <h2 class="focus_module_fancy_header huge">Learn More</h2>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                    <div
-                                        class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area_101-dnd_partial-3-column-1-row-1-margin dnd-row">
-                                        <div class="row-fluid ">
-                                            <div class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                 style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                                                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-3"
-                                                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                     style="" data-hs-cos-general-type="widget"
-                                                     data-hs-cos-type="module">
-                                                    <section class="focus_module_image_text left_image">
-                                                        <img class="focus_module_image_text_img left_image"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=600&amp;height=515&amp;name=img-801.png"
-                                                             alt="Paragraph Image" loading="lazy" width="600"
-                                                             height="515"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=300&amp;height=258&amp;name=img-801.png 300w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=600&amp;height=515&amp;name=img-801.png 600w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=900&amp;height=773&amp;name=img-801.png 900w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1200&amp;height=1030&amp;name=img-801.png 1200w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1500&amp;height=1288&amp;name=img-801.png 1500w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1800&amp;height=1545&amp;name=img-801.png 1800w"
-                                                             sizes="(max-width: 600px) 100vw, 600px">
-                                                        <div
-                                                            class="focus_module_image_text_container focus_module_container">
-                                                            <h2 class="focus_module_image_text_title">Being creative in
-                                                                marketing.</h2>
-                                                            <p>Far far away, behind the word mountains, far from the
-                                                                countries Vokalia and Consonantia, there live the blind
-                                                                texts. Separated they live in grove right at the coast
-                                                                of the Semantics, a large language ocean. Because there
-                                                                were thousands of bad Commas, wild Question Marks and
-                                                                devious Semikoli.</p>
-                                                            <a class="button" href=""> Read more </a>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                    <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
-                                        <div class="row-fluid ">
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd_area_101-dnd_partial-3-column-4-margin dnd-column dnd_area_101-dnd_partial-3-column-4-padding"
-                                                style="" data-widget-type="cell" data-x="0" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-5"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Training.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                        <a class="button" href=""> Read more </a>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd_area_101-dnd_partial-3-column-6-padding dnd_area_101-dnd_partial-3-column-6-margin dnd-column"
-                                                style="" data-widget-type="cell" data-x="4" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-7"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Practicing.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                        <a class="button" href=""> Read more </a>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd_area_101-dnd_partial-3-column-8-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="8" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-9"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Design.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                        <a class="button" href=""> Read more </a>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
+
                         <div
                             class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area_101-row-3-background-color dnd_area_101-row-3-padding">
                             <div class="row-fluid ">
@@ -610,23 +448,24 @@
                             </div>
                             <!--end row-->
                         </div>
-                        <!--end row-wrapper -->
+                        <!--end row-wrapper counter-->
+
                         <div
-                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area_101-dnd_partial-5-row-0-padding">
+                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area_101-dnd_partial-3-row-0-background-color dnd_area_101-dnd_partial-3-row-0-padding">
                             <div class="row-fluid ">
                                 <div class="span12 widget-span widget-type-cell dnd-column" style=""
                                      data-widget-type="cell" data-x="0" data-w="12">
                                     <div
-                                        class="row-fluid-wrapper row-depth-1 row-number-2 dnd_area_101-dnd_partial-5-column-1-row-0-margin dnd-row">
+                                        class="row-fluid-wrapper row-depth-1 row-number-2 dnd_area_101-dnd_partial-3-column-1-row-0-margin dnd-row">
                                         <div class="row-fluid ">
                                             <div class="span12 widget-span widget-type-custom_widget dnd-module"
                                                  style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                                                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-5-module-2"
+                                                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-3-module-2"
                                                      class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
                                                      style="" data-hs-cos-general-type="widget"
                                                      data-hs-cos-type="module">
                                                     <div class="focus_module_fancy_header_container focus_centered">
-                                                        <h2 class="focus_module_fancy_header huge">Events</h2>
+                                                        <h2 class="focus_module_fancy_header huge">Our Work</h2>
                                                     </div>
                                                 </div>
                                             </div>
@@ -635,388 +474,186 @@
                                         <!--end row-->
                                     </div>
                                     <!--end row-wrapper -->
-                                    <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
-                                        <div class="row-fluid ">
-                                            <div class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                 style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                                                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-5-module-3"
-                                                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                     style="" data-hs-cos-general-type="widget"
-                                                     data-hs-cos-type="module">
-                                                    <div class="focus_grid-container focus_module_calendar">
-                                                        <section class="focus_grid-inner mmc-grid-inner">
-                                                            <div class="focus_grid-col focus_grid--1col mgi-col1">
-                                                                <div
-                                                                    class="focus_grid-content focus_grid-content--1col">
-                                                                    <div class="focus_module_calendar_item">
-                                                                        <div
-                                                                            class="focus_module_calendar-left_container">
-                                                                            <img class="focus_module_calendar_img"
-                                                                                 src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=180&amp;height=180&amp;name=event-802.png"
-                                                                                 alt="event-002" loading="lazy"
-                                                                                 width="180" height="180"
-                                                                                 srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=90&amp;height=90&amp;name=event-802.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=180&amp;height=180&amp;name=event-802.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=270&amp;height=270&amp;name=event-802.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=360&amp;height=360&amp;name=event-802.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=450&amp;height=450&amp;name=event-802.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-802.png?width=540&amp;height=540&amp;name=event-802.png 540w"
-                                                                                 sizes="(max-width: 180px) 100vw, 180px">
-                                                                        </div>
-                                                                        <div
-                                                                            class="focus_module_calendar_title_container">
-                                                                            <time class="focus_module_calendar_date"> 8
-                                                                                Nov, 24
-                                                                            </time>
-                                                                            <h3 class="focus_module_calendar_title">
-                                                                                Title of first event</h3>
-                                                                            <p class="focus_module_calendar_note">Some
-                                                                                additional note over here.</p>
-                                                                        </div>
-                                                                        <a class="button" href=""> Learn more </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="focus_grid-col focus_grid--1col mgi-col1">
-                                                                <div
-                                                                    class="focus_grid-content focus_grid-content--1col">
-                                                                    <div class="focus_module_calendar_item">
-                                                                        <div
-                                                                            class="focus_module_calendar-left_container">
-                                                                            <img class="focus_module_calendar_img"
-                                                                                 src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=180&amp;height=180&amp;name=event-801.png"
-                                                                                 alt="event-001" loading="lazy"
-                                                                                 width="180" height="180"
-                                                                                 srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=90&amp;height=90&amp;name=event-801.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=180&amp;height=180&amp;name=event-801.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=270&amp;height=270&amp;name=event-801.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=360&amp;height=360&amp;name=event-801.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=450&amp;height=450&amp;name=event-801.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-801.png?width=540&amp;height=540&amp;name=event-801.png 540w"
-                                                                                 sizes="(max-width: 180px) 100vw, 180px">
-                                                                        </div>
-                                                                        <div
-                                                                            class="focus_module_calendar_title_container">
-                                                                            <time class="focus_module_calendar_date"> 19
-                                                                                Nov, 24
-                                                                            </time>
-                                                                            <h3 class="focus_module_calendar_title">You
-                                                                                should definitely join this
-                                                                                marketing!</h3>
-                                                                        </div>
-                                                                        <a class="button" href=""> Join </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="focus_grid-col focus_grid--1col mgi-col1">
-                                                                <div
-                                                                    class="focus_grid-content focus_grid-content--1col">
-                                                                    <div class="focus_module_calendar_item">
-                                                                        <div
-                                                                            class="focus_module_calendar-left_container">
-                                                                            <img class="focus_module_calendar_img"
-                                                                                 src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=180&amp;height=180&amp;name=event-803.png"
-                                                                                 alt="event-003" loading="lazy"
-                                                                                 width="180" height="180"
-                                                                                 srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=90&amp;height=90&amp;name=event-803.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=180&amp;height=180&amp;name=event-803.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=270&amp;height=270&amp;name=event-803.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=360&amp;height=360&amp;name=event-803.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=450&amp;height=450&amp;name=event-803.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-803.png?width=540&amp;height=540&amp;name=event-803.png 540w"
-                                                                                 sizes="(max-width: 180px) 100vw, 180px">
-                                                                        </div>
-                                                                        <div
-                                                                            class="focus_module_calendar_title_container">
-                                                                            <time class="focus_module_calendar_date"> 26
-                                                                                Nov, 24
-                                                                            </time>
-                                                                            <h3 class="focus_module_calendar_title">
-                                                                                Another event</h3>
-                                                                            <p class="focus_module_calendar_note">Get
-                                                                                ready.</p>
-                                                                        </div>
-                                                                        <a class="button" href=""> I'm ready! </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </section>
+
+                                    <div class="container">
+                                        <div class="row">
+
+                                            <!-- First column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <a href="{{ route('projects') }}">
+                                                            <img
+                                                                src="https://mdbcdn.b-cdn.net/img/new/standard/nature/111.webp"
+                                                                class="img-fluid" alt=""/>
+                                                        </a>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
                                                     </div>
                                                 </div>
+                                                <!-- Card -->
+
                                             </div>
-                                            <!--end widget-span -->
+                                            <!-- First column -->
+
+                                            <!-- Second column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <img
+                                                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/112.webp"
+                                                            class="img-fluid"/>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+
+                                            </div>
+                                            <!-- Second column -->
+
+                                            <!-- Third column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <img
+                                                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp"
+                                                            class="img-fluid"/>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+
+                                            </div>
+                                            <!-- Third column -->
+
+                                            <!-- Third column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <img
+                                                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp"
+                                                            class="img-fluid"/>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+
+                                            </div>
+                                            <!-- Third column -->
+                                            <!-- Third column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <img
+                                                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp"
+                                                            class="img-fluid"/>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+
+                                            </div>
+                                            <!-- Third column -->
+                                            <!-- Third column -->
+                                            <div class="col-md-4 p-3">
+
+                                                <!-- Card -->
+                                                <div class="card">
+                                                    <div class="bg-image hover-overlay" data-mdb-ripple-init
+                                                         data-mdb-ripple-color="light">
+                                                        <img
+                                                            src="https://mdbcdn.b-cdn.net/img/new/standard/nature/113.webp"
+                                                            class="img-fluid"/>
+                                                        <a href="#!">
+                                                            <div class="mask"
+                                                                 style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">Card title</h5>
+                                                        <p class="card-text">Some quick example text to build on the
+                                                            card title and make up the bulk of the card's
+                                                            content.</p>
+                                                        {{--                                                        <a href="#!" class="btn btn-primary">Button</a>--}}
+                                                    </div>
+                                                </div>
+                                                <!-- Card -->
+
+                                            </div>
+                                            <!-- Third column -->
                                         </div>
-                                        <!--end row-->
                                     </div>
-                                    <!--end row-wrapper -->
                                 </div>
                                 <!--end widget-span -->
                             </div>
                             <!--end row-->
                         </div>
-                        <!--end row-wrapper -->
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area_101-dnd_partial-6-row-0-margin dnd_area_101-dnd_partial-6-row-0-padding dnd-section dnd_area_101-dnd_partial-6-row-0-background-color">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
-                                     data-widget-type="custom_widget" data-x="0" data-w="12">
-                                    <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-6-module-1"
-                                         class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                         style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-                                        <div class="focus_module_quote">
-                                            <div class="focus_module_quote_img">
-                                                <img
-                                                    src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=150&amp;height=150&amp;name=avatar-006.png"
-                                                    alt="avatar-006" loading="lazy" width="150" height="150"
-                                                    srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=75&amp;height=75&amp;name=avatar-006.png 75w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=150&amp;height=150&amp;name=avatar-006.png 150w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=225&amp;height=225&amp;name=avatar-006.png 225w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=300&amp;height=300&amp;name=avatar-006.png 300w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=375&amp;height=375&amp;name=avatar-006.png 375w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/avatar-006.png?width=450&amp;height=450&amp;name=avatar-006.png 450w"
-                                                    sizes="(max-width: 150px) 100vw, 150px">
-                                                <div class="focus_module_quote_icon">
-               <span id="hs_cos_wrapper_dnd_area_101-dnd_partial-6-module-1_"
-                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_icon" style=""
-                     data-hs-cos-general-type="widget" data-hs-cos-type="icon">
-                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512" aria-hidden="true">
-                 <g id="quote-right17_layer">
-                  <path
-                      d="M512 80v128c0 137.018-63.772 236.324-193.827 271.172-15.225 4.08-30.173-7.437-30.173-23.199v-33.895c0-10.057 6.228-19.133 15.687-22.55C369.684 375.688 408 330.054 408 256h-72c-26.51 0-48-21.49-48-48V80c0-26.51 21.49-48 48-48h128c26.51 0 48 21.49 48 48zM176 32H48C21.49 32 0 53.49 0 80v128c0 26.51 21.49 48 48 48h72c0 74.054-38.316 119.688-104.313 143.528C6.228 402.945 0 412.021 0 422.078v33.895c0 15.762 14.948 27.279 30.173 23.199C160.228 444.324 224 345.018 224 208V80c0-26.51-21.49-48-48-48z"/>
-                 </g>
-                </svg></span>
-                                                </div>
-                                            </div>
-                                            <div class="focus_module_quote_text t_big">
-                                                We love marketing stuff. We mean it.
-                                            </div>
-                                            <div class="focus_module_quote_owner">
-                                                Chloe Sullivan, Founder
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area_101-dnd_partial-7-row-0-margin dnd-section">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-cell dnd-column" style=""
-                                     data-widget-type="cell" data-x="0" data-w="12">
-                                    <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
-                                        <div class="row-fluid ">
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd_area_101-dnd_partial-7-column-2-margin dnd_area_101-dnd_partial-7-column-2-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="0" data-w="4">
-                                                <div
-                                                    class="row-fluid-wrapper row-depth-1 row-number-3 dnd_area_101-dnd_partial-7-column-2-row-0-margin dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-3"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <div
-                                                                    class="focus_module_single_letter_number_container focus_centered">
-                                                                    <div class="focus_module_single_letter_number">
-                                                                        A
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-4"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-4_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="rich_text"><p>Far far away, behind the word mountains, far from the countries <a
-                                                                            href="#">Vokalia and Consonantia</a>, there live the blind texts and more.</p> <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean and beyond then.</p></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-7-module-5-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-5"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <a class="hs-button " href="www.hubspot.com"
-                                                                   id="hs-button_dnd_area_101-dnd_partial-7-module-5"
-                                                                   rel=""> Find more </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd_area_101-dnd_partial-7-column-6-margin dnd_area_101-dnd_partial-7-column-6-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="4" data-w="4">
-                                                <div
-                                                    class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row dnd_area_101-dnd_partial-7-column-6-row-0-margin">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-7"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <div
-                                                                    class="focus_module_single_letter_number_container focus_centered">
-                                                                    <div class="focus_module_single_letter_number">
-                                                                        B
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-8"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-8_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="rich_text"><p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli.</p> <p>Far far away, behind the word mountains, far from the countries <a
-                                                                            href="#">Vokalia and Consonantia</a>, there live the blind texts and more.</p></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-7-module-9-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-9"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <a class="hs-button " href="www.hubspot.com"
-                                                                   id="hs-button_dnd_area_101-dnd_partial-7-module-9"
-                                                                   rel=""> Visit </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell dnd-column dnd_area_101-dnd_partial-7-column-10-padding"
-                                                style="" data-widget-type="cell" data-x="8" data-w="4">
-                                                <div
-                                                    class="row-fluid-wrapper row-depth-1 row-number-9 dnd_area_101-dnd_partial-7-column-10-row-0-margin dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div
-                                                                id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-11"
-                                                                class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                style="" data-hs-cos-general-type="widget"
-                                                                data-hs-cos-type="module">
-                                                                <div
-                                                                    class="focus_module_single_letter_number_container focus_centered">
-                                                                    <div class="focus_module_single_letter_number">
-                                                                        C
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-10 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div
-                                                                id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-12"
-                                                                class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
-                                                                style="" data-hs-cos-general-type="widget"
-                                                                data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-12_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="rich_text"><p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean and beyond then.</p> <p>On the skyline of her <a
-                                                                            href="#">hometown</a> Bookmarks grove, the headline of Alphabet Village and the subline of her own road she had a last view with her eyes.</p></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-11 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-7-module-13-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div
-                                                                id="hs_cos_wrapper_dnd_area_101-dnd_partial-7-module-13"
-                                                                class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                style="" data-hs-cos-general-type="widget"
-                                                                data-hs-cos-type="module">
-                                                                <a class="hs-button " href="www.hubspot.com"
-                                                                   id="hs-button_dnd_area_101-dnd_partial-7-module-13"
-                                                                   rel=""> Try now </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
+                        <!--end row-wrapper work -->
+
                         <div
                             class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section dnd_area_101-dnd_partial-8-row-0-force-full-width-section dnd_area_101-dnd_partial-8-row-0-padding">
                             <div class="row-fluid ">
@@ -1034,17 +671,16 @@
                                                          alt="cta-section-image" loading="lazy" width="600" height="496"
                                                          srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=300&amp;height=248&amp;name=img-005.png 300w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=600&amp;height=496&amp;name=img-005.png 600w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=900&amp;height=744&amp;name=img-005.png 900w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=1200&amp;height=992&amp;name=img-005.png 1200w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=1500&amp;height=1240&amp;name=img-005.png 1500w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-005.png?width=1800&amp;height=1488&amp;name=img-005.png 1800w"
                                                          sizes="(max-width: 600px) 100vw, 600px">
-                                                    <h2 class="focus_module_cta_section-title">Ask for a quote now!</h2>
+                                                    <h2 class="focus_module_cta_section-title">Ask for a free
+                                                        Consultation now!</h2>
                                                     <p class="focus_module_cta_section-text">This is the last call for
                                                         big chances and discounted prices. Get the most out of Focus
                                                         theme today.</p>
                                                 </div>
                                                 <div class="focus_module_cta_section-ctas">
                                                     <div class="button-wrapper focus_module_container">
-                                                        <a class="button focus_primary_button" href=""> Learn More </a>
-                                                    </div>
-                                                    <div class="button-wrapper focus_module_container">
-                                                        <a class="button focus_secondary_button" href=""> Get Quote </a>
+                                                        <a class="button focus_primary_button"
+                                                           href="{{ route('contact-us.create') }}"> Learn More </a>
                                                     </div>
                                                 </div>
                                             </div>

@@ -60,11 +60,13 @@
         }
     </style>
     <link rel="stylesheet"
-          href="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95806512590/1710071123086/marketplace/Stuff_Matters_Inc_/Focus/css/main.min.css">
+          href="{{ asset('assets/css/main.css') }}">
     <link rel="stylesheet"
-          href="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95804188883/1710071119395/marketplace/Stuff_Matters_Inc_/Focus/css/theme-overrides.min.css">
+          href="{{ asset('assets/css/theme-overrides.css') }}">
+    <link href="{{ asset('assets/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/1710071114087/module_95802247389_website-header.css">
+          href="{{ asset('assets/css/website-header.css') }}">
+    @yield('styles')
     <style>
         @media (max-width: 767px) {
             #hs_cos_wrapper_header-top-dnd_area_101-module-1 .focus_module_website_h,
@@ -86,7 +88,7 @@
 
     </style>
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/95804189174/1710071114907/module_95804189174_fancy-header.min.css">
+          href="{{ asset('assets/css/fancy-header.css') }}">
     <style>
         #hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1 .focus_module_fancy_header {
             color: #FFFFFF;
@@ -108,11 +110,11 @@
 
     </style>
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/95804189175/1710071115341/module_95804189175_team-members.min.css">
+          href="{{ asset('assets/css/team-members.min.css') }}">
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/95804189172/1710071115538/module_95804189172_tabs.min.css">
+          href="{{ asset('assets/css/tabs.min.css') }}">
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/95802247381/1710071115046/module_95802247381_media-boxes.min.css">
+          href="{{ asset('assets/css/media-boxes.min.css') }}">
     <style>
         #hs_cos_wrapper_dnd_area_101-module-5 .focus_module_media_boxes_item {
             min-height: 380px;
@@ -204,17 +206,11 @@
         }
 
     </style>
-    <style>
-        #hs_cos_wrapper_dnd_area_101-module-5 .mmmbi2 {
-            background: url(https://19808513.fs1.hubspotusercontent-na1.net/hubfs/19808513/focus-demo/media-box-001.jpg) center center no-repeat;
-            background-size: cover;
-        }
 
-    </style>
     <link rel="stylesheet"
-          href="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95804188873/1710071119173/marketplace/Stuff_Matters_Inc_/Focus/css/menu.min.css">
+          href="{{ asset('assets/css/menu.css') }}">
     <link rel="stylesheet"
-          href="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/1710071114045/module_95804481729_website-footer.css">
+          href="{{ asset('assets/css/footer.css') }}">
     <style>
         @media (max-width: 767px) {
             #hs_cos_wrapper_footer-dnd_area_101-module-1 .mwf_row {
@@ -287,7 +283,7 @@
         }
 
         .dnd_area_101-dnd_partial-1-row-0-background-color {
-            background-color: rgba(0, 0, 0, 1) !important;
+            background-color: #37517e !important;
         }
 
         .dnd_area_101-dnd_partial-2-module-7-flexbox-positioning {
@@ -370,7 +366,6 @@
             max-width: none !important;
         }
 
-        /* HubSpot Styles (default) */
         .dnd_area_101-dnd_partial-1-row-0-margin {
             margin-bottom: 100px !important;
         }
@@ -425,21 +420,14 @@
             padding-right: 0px !important;
         }
 
-        /* HubSpot Styles (mobile) */
         @media (max-width: 767px) {
             .dnd_area_101-dnd_partial-2-column-2-margin {
                 margin-bottom: 100px !important;
             }
         }
     </style>
-    <link rel="canonical"
-          href="../../../eu/hubspotpagebuilder/techpulse-solutions-144302562/-temporary-slug-53ca00cc-397e-4cb2-be4f-8e15e684131d.html">
-    <meta property="og:url"
-          content="https://techpulse-solutions-144302562.hubspotpagebuilder.eu/-temporary-slug-53ca00cc-397e-4cb2-be4f-8e15e684131d">
-    <script>var hsVars = {app_hs_base_url: 'https://app-eu1.hubspot.com'};</script>
     <meta name="twitter:card" content="summary">
-    <meta name="generator" content="HubSpot">
-    <title>About</title>
+    <title>@yield('title')</title>
 </head>
 
 <body>
@@ -448,26 +436,22 @@
 
     <x-topbar/>
 
-
     @yield('content')
 
     <x-footer/>
 </div>
-<script defer src="/hs/hsstatic/cms-free-branding-lib/static-1.267/js/index.js"></script>
-<script
-    src="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95804480989/1710071120165/marketplace/Stuff_Matters_Inc_/Focus/js/main.min.js"></script>
+<script src="{{ asset('assets/js/main.js') }}"></script>
 <script>
     var hsVars = hsVars || {};
     hsVars['language'] = 'en';
 </script>
-<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
 <script
-    src="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95804188867/1710071119808/marketplace/Stuff_Matters_Inc_/Focus/js/menu.min.js"></script>
+    src="{{ asset('assets/js/menu.min.js') }}"></script>
 <script
-    src="http://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/template_assets/95804480988/1710071120276/marketplace/Stuff_Matters_Inc_/Focus/js/language.min.js"></script>
+    src="{{ asset('assets/js/language.min.js') }}"></script>
 <script
-    src="https://f.hubspotusercontent-eu1.net/hub/144302562/hub_generated/module_assets/95804189172/1710071114251/module_95804189172_tabs.min.js"></script>
-<!-- Start of HubSpot Analytics Code Not Loaded -->
+    src="{{ asset('assets/js/tabs.min.js') }}"></script>
+
 <script>
     (function () {
         const timeoutEvent = document.createEvent('CustomEvent');
@@ -475,25 +459,6 @@
         window.dispatchEvent(timeoutEvent);
     })();
 </script>
-<!-- End of HubSpot Analytics Code Not Loaded -->
-<script type="text/javascript">
-    var hsVars = {
-        render_id: "b12cfd7f-81cc-4066-a53c-03fcdd182a54",
-        ticks: 1710072353566,
-        page_id: 95807005922,
-
-        content_group_id: 0,
-        portal_id: 144302562,
-        app_hs_base_url: "https://app-eu1.hubspot.com",
-        cp_hs_base_url: "https://cp-eu1.hubspot.com",
-        language: "en",
-        analytics_page_type: "standard-page",
-        analytics_page_id: "95807005922",
-        category_id: 1,
-        folder_id: 0,
-        is_hubspot_user: null
-    }
-</script>
-<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.306/js/index.js"></script>
+<script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 </html>

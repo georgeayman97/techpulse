@@ -1,0 +1,16 @@
+.focus_module_clients_item {
+    align-items: center;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    padding: 50px;
+    transition: all .3s ease
+}
+
+.focus_module_clients_img {
+    transition: all .3s ease
+}
+
+.focus_module_clients .splide__arrows {
+    display: none
+}

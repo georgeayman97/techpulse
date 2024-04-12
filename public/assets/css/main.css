@@ -1497,3 +1497,19 @@ button.oembed_custom-thumbnail .oembed_custom-thumbnail_icon svg {
     box-shadow: none;
     padding: 0
 }
+
+
+/* clients*/
+.clients {
+    padding: 12px 0;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.section-bg {
+    background-color: #f3f5fa;
+}
+
+
+/* End Clients */

@@ -1,0 +1,26 @@
+.focus_module_team_members_img {
+    border-radius: 50%;
+    display: block;
+    font-size: 0;
+    height: auto;
+    width: 100%
+}
+
+.focus_module_team_members_text {
+    text-align: center
+}
+
+.focus_module_team_members_text .focus_social_icons {
+    justify-content: center
+}
+
+.focus_module_team_members_title {
+    font-size: 30px
+}
+
+.focus_module_team_members_job {
+    border-radius: 30px;
+    display: inline-block;
+    font-size: 14px;
+    padding: 0 10px
+}
