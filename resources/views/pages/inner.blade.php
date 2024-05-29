@@ -1,56 +1,70 @@
-@extends('layouts.master')
+@php use App\Enum\MediaCollection; @endphp
+@extends('layouts.main')
 @section('content')
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">About Us</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item" aria-current="page">About</li>
-                    </ol>
-                </nav>
+    <div id="banner-area">
+        <img src="{{ asset('assets2/images/banner/banner2.jpg') }}" alt=""/>
+        <div class="parallax-overlay"></div>
+        <!-- Subpage title start -->
+        <div class="banner-title-content">
+            <div class="text-center">
+                <h2>Portfolio Single</h2>
+                <ul class="breadcrumb">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('projects') }}">Portfolio</a></li>
+                    <li>{{ $project->title_en }}</li>
+                </ul>
             </div>
-        </div>
-        <!-- Page Header End -->
+        </div><!-- Subpage title end -->
+    </div><!-- Banner area end -->
 
-        <!-- About Start -->
-        <div class="container-fluid py-5 my-5">
-            <div class="container py-5">
-                <div class="row g-5">
-                    <div class="col-lg-5 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".3s">
-                        <div class="h-100 position-relative">
-                            <img src="{{ asset('assets/img/about-1.jpg')}}" class="img-fluid w-100 rounded" alt="" style="margin-bottom: 25%;">
+
+    <!-- Portfolio item start -->
+    <section id="portfolio-item">
+        <div class="container">
+            <!-- Portfolio item row start -->
+            <div class="row">
+                <!-- Portfolio item slider start -->
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="portfolio-slider">
+                        <div class="flexportfolio flexslider">
+                            <ul class="slides">
+                                @foreach($project?->getMedia(MediaCollection::PROJECT_IMAGES->value) as $media)
+                                    <li><img src="{{ asset($media->getUrl()) }}" alt=""></li>
+                                @endforeach
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-6 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <h5 class="text-primary">About Us</h5>
-                        <h1 class="mb-4">About HighTech Agency And It's Innovative IT Solutions</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
+                </div>
+                <!-- Portfolio item slider end -->
+
+                <!-- sidebar start -->
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="sidebar">
+                        <div class="portfolio-desc">
+                            <h3 class="widget-title">About Project</h3>
+                            <p>
+                                {!! $project->description_en !!}
+                            </p>
+                            <br/>
+                            <h3 class="widget-title">Used Skills</h3>
+                            <p>
+                                @foreach($project->tags as $key => $tag)
+                                    {{$tag->name .(($key != 0) || ($key+1 != $project->tags->count()) ?
+                                     ($key+1 !=$project->tags->count()-1? ',':'&'):'')}}
+                                @endforeach
+                            </p>
+                            <br/>
+                            <h3 class="widget-title">Clients</h3>
+                            <p>{{ $project?->client?->name }}</p>
+                            {{--                            <p><a href="#" class="project-btn btn btn-primary">Project Link</a></p>--}}
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- About End -->
+                <!-- sidebar end -->
+            </div><!-- Portfolio item row end -->
+        </div><!-- Container end -->
+    </section><!-- Portfolio item end -->
 
-
-        <!-- Team Start -->
-        <div class="container-fluid pb-5 mb-5 team">
-            <div class="container pb-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Team</h5>
-                    <h1>Meet our expert Team</h1>
-                </div>
-                <div class="row g-5">
-                    <div class="col-lg-12 col-md-12 col-sm-12 wow fadeIn" data-wow-delay=".5s">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed efficitur quis purus ut interdum. Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus. Etiam gravida justo nec erat vestibulum, et malesuada augue laoreet.</p>
-                        <p class="mb-4">Pellentesque aliquam dolor eget urna ultricies tincidunt. Nam volutpat libero sit amet leo cursus, ac viverra eros tristique. Morbi quis quam mi. Cras vel gravida eros. Proin scelerisque quam nec elementum viverra. Suspendisse viverra hendrerit diam in tempus.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
+    <div class="gap-40"></div>
 
 @endsection

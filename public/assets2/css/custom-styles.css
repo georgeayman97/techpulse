@@ -1,0 +1,68 @@
+.navbar-brand img {
+    padding: 0;
+}
+
+.header4 .navbar-brand {
+    padding-top: 0;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.img-responsive {
+    height: revert-layer;
+}
+
+.nav::before, .nav::after {
+    margin-top: 2%;
+}
+
+.call-to-action.dark {
+    background: #211f60;
+}
+
+.facts.one {
+    background: rgb(33, 31, 96);
+}
+
+.facts.two {
+    background: rgb(33, 31, 96);
+}
+
+.facts.three {
+    background: rgb(33, 31, 96);
+}
+
+.facts.four {
+    background: rgb(33, 31, 96);
+}
+
+.facts:hover {
+    background: rgb(22, 21, 68) !important;
+}
+
+.call-to-action .btn.btn-primary.white:hover {
+    background: #fc4f03;
+}
+
+.header4 ul.navbar-nav > li > a {
+    color: #211f60;
+}
+
+.footer-logo img {
+    height: auto;
+    width: 30%;
+}
+
+ul.navbar-nav > li:hover > a, ul.navbar-nav > li.active > a {
+    color: #fc4f03;
+}
+
+.service-section {
+    padding: 80px 0 0 0;
+}
+
+figure.effect-oscar h3 {
+    font-size: 14px;
+}

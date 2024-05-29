@@ -1,74 +1,68 @@
-@extends('layouts.arsha')
-@section('title','project')
+@php use App\Enum\MediaCollection; @endphp
+@extends('layouts.main')
+@section('title','projects')
 @section('content')
-    <div
-        class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area_101-dnd_partial-1-row-0-background-color dnd-section dnd_area_101-dnd_partial-1-row-0-padding">
-        <div class="row-fluid ">
-            <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
-                 data-widget-type="custom_widget" data-x="0" data-w="12">
-                <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1"
-                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style=""
-                     data-hs-cos-general-type="widget" data-hs-cos-type="module">
-                    <div class="focus_module_fancy_header_container focus_centered">
-                        <h1 class="focus_module_fancy_header huge">Project</h1>
-                    </div>
-                </div>
+    <div id="banner-area">
+        <img src="{{ asset('assets2/images/banner/banner2.jpg') }}" alt=""/>
+        <div class="parallax-overlay"></div>
+        <!-- Subpage title start -->
+        <div class="banner-title-content">
+            <div class="text-center">
+                <h2>Portfolio Classic</h2>
+                <ul class="breadcrumb">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Portfolio</li>
+                </ul>
             </div>
-            <!--end widget-span -->
-        </div>
-        <!--end row-->
-    </div>
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details">
+        </div><!-- Subpage title end -->
+    </div><!-- Banner area end -->
+
+
+    <!-- Portfolio start -->
+    <section id="main-container" class="portfolio portfolio-box">
         <div class="container">
-
-            <div class="row gy-4">
-
-                <div class="col-lg-8">
-                    <div class="portfolio-details-slider swiper">
-                        <div class="swiper-wrapper align-items-center">
-
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/arsha/assets/img/portfolio/portfolio-1.jpg') }}" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/arsha/assets/img/portfolio/portfolio-2.jpg') }}" alt="">
-                            </div>
-
-                            <div class="swiper-slide">
-                                <img src="{{ asset('assets/arsha/assets/img/portfolio/portfolio-3.jpg') }}" alt="">
-                            </div>
-
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>
+            <!--Isotope filter start -->
+            <div class="row text-center">
+                <div class="isotope-nav" data-isotope-nav="isotope">
+                    <ul>
+                        <li><a href="#" class="active" data-filter="*">All</a></li>
+                        @foreach($categories as $category)
+                            <li><a href="#" data-filter=".{{ $category->slug }}">{{ $category->name_en }}</a></li>
+                        @endforeach
+                    </ul>
                 </div>
+            </div><!-- Isotope filter end -->
 
-                <div class="col-lg-4">
-                    <div class="portfolio-info">
-                        <h3>Project information</h3>
-                        <ul>
-                            <li><strong>Category</strong>: Web design</li>
-                            <li><strong>Client</strong>: ASU Company</li>
-                            <li><strong>Project date</strong>: 01 March, 2020</li>
-                            <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-                        </ul>
-                    </div>
-                    <div class="portfolio-description">
-                        <h2>This is an example of portfolio detail</h2>
-                        <p>
-                            Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore
-                            quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim.
-                            Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi
-                            nulla at esse enim cum deserunt eius.
-                        </p>
-                    </div>
-                </div>
+            <div class="row">
+                <div id="isotope" class="isotope">
+                    @foreach($categories as $category)
+                        @foreach($category->deployedProjects as $project)
+                            <div class="col-sm-3 {{ $category->slug }} isotope-item">
+                                <div class="grid">
+                                    <figure class="effect-oscar">
+                                        <img
+                                            src="{{ $project?->getFirstMediaUrl(MediaCollection::PROJECT_HOME_IMAGE->value) }}"
+                                            alt="">
+                                        <figcaption>
+                                            <h3>{{ \Illuminate\Support\Str::limit($project->title_en, 20) }}</h3>
+                                            <a class="link icon-pentagon"
+                                               href="{{ route('projects.show',[$project->slug]) }}"><i
+                                                    class="fa fa-link"></i></a>
+                                            <a class="view icon-pentagon" data-rel="prettyPhoto"
+                                               href="{{ $project?->getFirstMediaUrl(MediaCollection::PROJECT_HOME_IMAGE->value) }}">
+                                                <i class="fa fa-search"></i>
+                                            </a>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            <!-- Isotope item end -->
+                        @endforeach
+                    @endforeach
+                </div><!-- Isotope content end -->
+            </div><!-- Content row end -->
+        </div><!-- Container end -->
+    </section><!-- Portfolio end -->
 
-            </div>
-
-        </div>
-    </section>
-    <!-- End Portfolio Details Section -->
+    <div class="gap-40"></div>
 @endsection

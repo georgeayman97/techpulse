@@ -1,138 +1,189 @@
-@extends('layouts.master')
+@extends('layouts.main')
 @section('content')
-        <!-- Page Header Start -->
-        <div class="container-fluid page-header py-5">
-            <div class="container text-center py-5">
-                <h1 class="display-2 text-white mb-4 animated slideInDown">Services</h1>
-                <nav aria-label="breadcrumb animated slideInDown">
-                    <ol class="breadcrumb justify-content-center mb-0">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Services</li>
-                    </ol>
-                </nav>
+    <div id="banner-area">
+        <img src="{{ asset('assets2/images/banner/banner2.jpg') }}" alt=""/>
+        <div class="parallax-overlay"></div>
+        <!-- Subpage title start -->
+        <div class="banner-title-content">
+            <div class="text-center">
+                <h2>Services</h2>
+                <ul class="breadcrumb">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Company</li>
+                    <li>Services</li>
+                </ul>
             </div>
-        </div>
-        <!-- Page Header End -->
+        </div><!-- Subpage title end -->
+    </div><!-- Banner area end -->
+
+    <!-- Main container start -->
+
+    <section id="main-container" class="service-section">
+        <div class="container">
+
+            <!-- Services -->
+
+            <div class="row">
+                <div class="col-md-12 heading">
+                    <span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
+                    <h2 class="title classic">Our Services</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-wordpress "></i></span>
+                            <h3>Web Design</h3>
+                            <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid
+                                befor</p>
+                        </div>
+                    </div><!--/ End first service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-android"></i></span>
+                            <h3>Apps Development</h3>
+                            <p>Food truck master cleanse mixtape minim Portland, cardigan stumptown chambray swag</p>
+                        </div>
+
+                    </div><!--/ End Second service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-shopping-cart"></i></span>
+                            <h3>eCommerce Websites</h3>
+                            <p>Neutra Thundercats craft beer, listicle meggings bicycle rights 90's XOXO beard
+                                cardiga</p>
+                        </div>
+                    </div><!--/ End Third service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-lightbulb-o"></i></span>
+                            <h3>Design for Startups</h3>
+                            <p>We design beautiful modern engaging websites that always latest responsive
+                                technologies.</p>
+                        </div>
+                    </div><!--/ End 4th service -->
+                </div>
+            </div><!-- Content 1st row end -->
+
+            <div class="gap-40"></div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".5s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-bar-chart"></i></span>
+                            <h3>SEO Service</h3>
+                            <p>High Life narwhal, banh mi PBR single-origin coffee Odd Future actually aliqua polaroid
+                                befor</p>
+                        </div>
+                    </div><!--/ End first service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay=".8s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-bicycle"></i></span>
+                            <h3>Startup Idea</h3>
+                            <p>Food truck master cleanse mixtape minim Portland, cardigan stumptown chambray swag</p>
+                        </div>
+
+                    </div><!--/ End Second service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.1s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-comments"></i></span>
+                            <h3>Consultation</h3>
+                            <p>Neutra Thundercats craft beer, listicle meggings bicycle rights 90's XOXO beard
+                                cardiga</p>
+                        </div>
+                    </div><!--/ End Third service -->
+
+                    <div class="col-md-3 col-sm-3 wow fadeInDown" data-wow-delay="1.4s">
+                        <div class="service-content text-center">
+                            <span class="service-icon icon-pentagon"><i class="fa fa-dollar"></i></span>
+                            <h3>Croud Funding</h3>
+                            <p>We design beautiful modern engaging websites that always latest responsive
+                                technologies.</p>
+                        </div>
+                    </div><!--/ End 4th service -->
+                </div>
+            </div><!-- Content 2nd row end -->
+
+            <!-- Services end -->
 
 
-        <!-- Fact Start -->
-        <div class="container-fluid bg-secondary py-5">
+        </div><!--/ 1st container end -->
+
+
+        <div class="gap-60"></div>
+
+
+        <!-- Testimonial start-->
+        <div class="testimonial parallax parallax3">
+            <div class="parallax-overlay"></div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".1s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">99</h1>
-                            <h5 class="text-white mt-1">Success in getting happy customer</h5>
+                    <div id="testimonial-carousel" class="owl-carousel owl-theme text-center testimonial-slide">
+                        <div class="item">
+                            <div class="testimonial-thumb">
+                                <img src="images/team/testimonial1.jpg" alt="testimonial">
+                            </div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
+                                    many web sites still in their infancy. Various versions have evolved over the years,
+                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
+                                    using.
+                                </p>
+                                <h3 class="name">Sarah Arevik<span>Chief Executive</span></h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".3s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">25</h1>
-                            <h5 class="text-white mt-1">Thousands of successful business</h5>
+                        <div class="item">
+                            <div class="testimonial-thumb">
+                                <img src="images/team/testimonial2.jpg" alt="testimonial">
+                            </div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
+                                    many web sites still in their infancy. Various versions have evolved over the years,
+                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
+                                    using.
+                                </p>
+                                <h3 class="name">Narek Bedros<span>Sr. Manager</span></h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".5s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">120</h1>
-                            <h5 class="text-white mt-1">Total clients who love HighTech</h5>
+                        <div class="item">
+                            <div class="testimonial-thumb">
+                                <img src="images/team/testimonial3.jpg" alt="testimonial">
+                            </div>
+                            <div class="testimonial-content">
+                                <p class="testimonial-text">
+                                    Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will uncover
+                                    many web sites still in their infancy. Various versions have evolved over the years,
+                                    sometimes by accident, sometimes on purpose. Lorem Ipsum is that it as opposed to
+                                    using.
+                                </p>
+                                <h3 class="name">Taline Lucine<span>Sales Manager</span></h3>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-lg-3 wow fadeIn" data-wow-delay=".7s">
-                        <div class="d-flex counter">
-                            <h1 class="me-3 text-primary counter-value">5</h1>
-                            <h5 class="text-white mt-1">Stars reviews given by satisfied clients</h5>
-                        </div>
+                    </div><!--/ Testimonial carousel end-->
+                </div><!--/ Row end-->
+            </div><!--/  Container end-->
+        </div><!--/ Testimonial end-->
+        <section class="call-to-action">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3>Join with BizCraft and Give Your Website a Brand New Look</h3>
+                        <a href="#" class="pull-right btn btn-primary white">Purchase Now</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- Fact End -->
+        </section>
 
+    </section><!--/ Main container end -->
 
-        <!-- Services Start -->
-        <div class="container-fluid services py-5 my-5">
-            <div class="container py-5">
-                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
-                    <h5 class="text-primary">Our Services</h5>
-                    <h1>Services Built Specifically For Your Business</h1>
-                </div>
-                <div class="row g-5 services-inner">
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-file-code fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Development</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-external-link-alt fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">UI/UX Design</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-user-secret fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Web Cecurity</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fa fa-envelope-open fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Digital Marketing</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="services-item bg-light">
-                            <div class="p-4 text-center services-content">
-                                <div class="services-content-icon">
-                                    <i class="fas fa-laptop fa-7x mb-4 text-primary"></i>
-                                    <h4 class="mb-3">Programming</h4>
-                                    <p class="mb-4">Lorem ipsum dolor sit amet elit. Sed efficitur quis purus ut interdum. Aliquam dolor eget urna ultricies tincidunt.</p>
-                                    <a href="" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Services End -->
 @endsection

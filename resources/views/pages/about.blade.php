@@ -1,467 +1,232 @@
-@extends('layouts.about')
+@extends('layouts.main')
 @section('title','About')
 @section('content')
-    <main id="main-content" class="body-container-wrapper">
-        <div class="body-container body-container--about">
-            <div class="row-fluid-wrapper">
-                <div class="row-fluid">
-                    <div class="span12 widget-span widget-type-cell " style="" data-widget-type="cell" data-x="0"
-                         data-w="12">
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-1 dnd_area_101-row-0-padding dnd_area_101-row-0-background-color dnd-section dnd_area_101-row-0-margin">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
-                                     data-widget-type="custom_widget" data-x="0" data-w="12">
-                                    <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-1-module-1"
-                                         class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                         style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-                                        <div class="focus_module_fancy_header_container focus_centered">
-                                            <h1 class="focus_module_fancy_header huge">About Us</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-12 dnd_area_101-row-4-padding dnd-section dnd_area_101-row-4-background-color">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-cell dnd-column" style=""
-                                     data-widget-type="cell" data-x="0" data-w="12">
-
-                                    <!--end row-wrapper -->
-                                    <div
-                                        class="row-fluid-wrapper row-depth-1 row-number-14 cell_17100722827843-row-1-margin dnd-row">
-                                        <div class="row-fluid ">
-                                            <div class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                 style="" data-widget-type="custom_widget" data-x="0" data-w="12">
-                                                <div id="hs_cos_wrapper_module_17100722827848"
-                                                     class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                     style="" data-hs-cos-general-type="widget"
-                                                     data-hs-cos-type="module">
-                                                    <section class="focus_module_image_text left_image">
-                                                        <div class="row">
-                                                            <img class="focus_module_image_text_img left_image col-6"
-                                                                 src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=600&amp;height=515&amp;name=img-801.png"
-                                                                 alt="Paragraph Image" loading="lazy" width="350"
-                                                                 height="350"
-                                                                 srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=300&amp;height=258&amp;name=img-801.png 300w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=600&amp;height=515&amp;name=img-801.png 600w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=900&amp;height=773&amp;name=img-801.png 900w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1200&amp;height=1030&amp;name=img-801.png 1200w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1500&amp;height=1288&amp;name=img-801.png 1500w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/img-801.png?width=1800&amp;height=1545&amp;name=img-801.png 1800w"
-                                                                 sizes="(max-width: 600px) 100vw, 600px">
-                                                            <div
-                                                                class="col-6 focus_module_image_text_container focus_module_container">
-                                                                <h2 class="focus_module_image_text_title">Being creative
-                                                                    in
-                                                                    marketing.</h2>
-                                                                <p>Far far away, behind the word mountains, far from the
-                                                                    countries Vokalia and Consonantia, there live the
-                                                                    blind
-                                                                    texts. Separated they live in grove right at the
-                                                                    coast
-                                                                    of the Semantics, a large language ocean. Because
-                                                                    there
-                                                                    were thousands of bad Commas, wild Question Marks
-                                                                    and
-                                                                    devious Semikoli.
-                                                                    Separated they live in grove right at the
-                                                                    coast
-                                                                    of the Semantics, a large language ocean. Because
-                                                                    there
-                                                                    were thousands of bad Commas, wild Question Marks
-                                                                    and
-                                                                    devious Semikoli.
-                                                                    Separated they live in grove right at the
-                                                                    coast
-                                                                    of the Semantics, a large language ocean. Because
-                                                                    there
-                                                                    were thousands of bad Commas, wild Question Marks
-                                                                    and
-                                                                    devious Semikoli.
-                                                                    Separated they live in grove right at the
-                                                                    coast
-                                                                    of the Semantics, a large language ocean. Because
-                                                                    there
-                                                                    were thousands of bad Commas, wild Question Marks
-                                                                    and
-                                                                    devious Semikoli.</p>
-                                                            </div>
-                                                        </div>
-
-
-                                                    </section>
-                                                </div>
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                    <div class="row-fluid-wrapper row-depth-1 row-number-15 dnd-row">
-                                        <div class="row-fluid ">
-                                            <div
-                                                class="span4 widget-span widget-type-cell cell_17100722827849-margin cell_17100722827849-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="0" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-16 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_module_171007228278413"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Training.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell cell_171007228278410-padding cell_171007228278410-margin dnd-column"
-                                                style="" data-widget-type="cell" data-x="4" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-17 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_module_171007228278415"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Practicing.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span4 widget-span widget-type-cell cell_171007228278411-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="8" data-w="4">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-18 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_module_171007228278417"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <section class="focus_module_image_text top_image">
-                                                                    <div
-                                                                        class="focus_module_image_text_container focus_module_container">
-                                                                        <h3 class="focus_module_image_text_title">
-                                                                            Design.</h3>
-                                                                        <p>Far far away, behind the word mountains, far
-                                                                            from the lit countries Vokalia and Conso.
-                                                                            Because there were thousands of bad
-                                                                            Commas.</p>
-                                                                    </div>
-                                                                </section>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
-                        <div
-                            class="row-fluid-wrapper row-depth-1 row-number-11 dnd_area_101-row-3-force-full-width-section dnd-section dnd_area_101-row-3-padding">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-custom_widget dnd-module" style=""
-                                     data-widget-type="custom_widget" data-x="0" data-w="12">
-                                    <div id="hs_cos_wrapper_dnd_area_101-module-4"
-                                         class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                         style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
-                                        <div class="focus_grid-container">
-                                            <section class="focus_grid-inner focus_module_clients">
-                                                <div class="focus_grid-col focus_grid--3col mgi-col1">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=180&amp;name=client-logo-101.png"
-                                                             alt="client-logo-001" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=90&amp;name=client-logo-101.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=180&amp;name=client-logo-101.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=270&amp;name=client-logo-101.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=360&amp;name=client-logo-101.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=450&amp;name=client-logo-101.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-101.png?width=540&amp;name=client-logo-101.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                                <div class="focus_grid-col focus_grid--3col mgi-col2">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=180&amp;name=client-logo-102.png"
-                                                             alt="client-logo-002" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=90&amp;name=client-logo-102.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=180&amp;name=client-logo-102.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=270&amp;name=client-logo-102.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=360&amp;name=client-logo-102.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=450&amp;name=client-logo-102.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-102.png?width=540&amp;name=client-logo-102.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                                <div class="focus_grid-col focus_grid--3col mgi-col3">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=180&amp;name=client-logo-103.png"
-                                                             alt="client-logo-003" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=90&amp;name=client-logo-103.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=180&amp;name=client-logo-103.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=270&amp;name=client-logo-103.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=360&amp;name=client-logo-103.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=450&amp;name=client-logo-103.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-103.png?width=540&amp;name=client-logo-103.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                                <div class="focus_grid-col focus_grid--3col mgi-col1">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=180&amp;name=client-logo-104.png"
-                                                             alt="client-logo-004" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=90&amp;name=client-logo-104.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=180&amp;name=client-logo-104.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=270&amp;name=client-logo-104.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=360&amp;name=client-logo-104.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=450&amp;name=client-logo-104.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-104.png?width=540&amp;name=client-logo-104.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                                <div class="focus_grid-col focus_grid--3col mgi-col2">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=180&amp;name=client-logo-105.png"
-                                                             alt="client-logo-005" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=90&amp;name=client-logo-105.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=180&amp;name=client-logo-105.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=270&amp;name=client-logo-105.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=360&amp;name=client-logo-105.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=450&amp;name=client-logo-105.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-105.png?width=540&amp;name=client-logo-105.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                                <div class="focus_grid-col focus_grid--3col mgi-col3">
-                                                    <div
-                                                        class="focus_grid-content focus_grid-content--3col focus_module_clients_item">
-                                                        <img class="focus_module_clients_img"
-                                                             src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=180&amp;name=client-logo-106.png"
-                                                             alt="client-logo-006" width="180" loading="lazy"
-                                                             srcset="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=90&amp;name=client-logo-106.png 90w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=180&amp;name=client-logo-106.png 180w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=270&amp;name=client-logo-106.png 270w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=360&amp;name=client-logo-106.png 360w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=450&amp;name=client-logo-106.png 450w, https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/client-logos/client-logo-106.png?width=540&amp;name=client-logo-106.png 540w"
-                                                             sizes="(max-width: 180px) 100vw, 180px">
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        </div>
-                                        <input id="m_info_fields-clients" type="hidden" data-masonry="false">
-                                    </div>
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-                        <!--end row-wrapper -->
-                        <div class="row-fluid-wrapper row-depth-1 row-number-1 dnd-section">
-                            <div class="row-fluid ">
-                                <div class="span12 widget-span widget-type-cell dnd-column" style=""
-                                     data-widget-type="cell" data-x="0" data-w="12">
-                                    <div class="row-fluid-wrapper row-depth-1 row-number-2 dnd-row">
-                                        <div class="row-fluid ">
-                                            <div
-                                                class="span6 widget-span widget-type-cell dnd_area_101-dnd_partial-2-column-2-margin dnd_area_101-dnd_partial-2-column-2-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="0" data-w="6">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-3 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-2-module-3-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-3"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module focus_linked_image widget-type-linked_image"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-3_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="linked_image"><img
-                                                                        src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-002.png?width=350&amp;name=event-002.png"
-                                                                        class="hs-image-widget "
-                                                                        style="width:350px;border-width:0px;border:0px;"
-                                                                        width="350" alt="Image 001" title="Image 001"
-                                                                        sizes="(max-width: 350px) 100vw, 350px"></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-4 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-4"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-4_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="rich_text"><h2>It's what we do.</h2> <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, <a
-                                                                            href="#">there live the</a> blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p> <p>A small river named <strong>Duden flows</strong> by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-5 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-2-module-5-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-5"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                            <div
-                                                class="span6 widget-span widget-type-cell dnd_area_101-dnd_partial-2-column-6-padding dnd-column"
-                                                style="" data-widget-type="cell" data-x="6" data-w="6">
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-6 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-2-module-7-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-7"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module focus_linked_image widget-type-linked_image"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-7_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_linked_image"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="linked_image"><img
-                                                                        src="https://19808513.fs1.hubspotusercontent-na1.net/hub/19808513/hubfs/focus-demo/event-003.png?width=350&amp;name=event-003.png"
-                                                                        class="hs-image-widget "
-                                                                        style="width:350px;border-width:0px;border:0px;"
-                                                                        width="350" alt="Image 002" title="Image 002"
-                                                                        sizes="(max-width: 350px) 100vw, 350px"></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-7 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-8"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <span
-                                                                    id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-8_"
-                                                                    class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text"
-                                                                    style="" data-hs-cos-general-type="widget"
-                                                                    data-hs-cos-type="rich_text"><h2>And this is how.</h2> <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen.</p> <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her <a
-                                                                            href="#">hometown</a> Bookmarksgrove, the headline of Alphabet Village and the subline of her own road.</p></span>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                                <div class="row-fluid-wrapper row-depth-1 row-number-8 dnd-row">
-                                                    <div class="row-fluid ">
-                                                        <div
-                                                            class="span12 widget-span widget-type-custom_widget dnd_area_101-dnd_partial-2-module-9-flexbox-positioning dnd-module"
-                                                            style="" data-widget-type="custom_widget" data-x="0"
-                                                            data-w="12">
-                                                            <div id="hs_cos_wrapper_dnd_area_101-dnd_partial-2-module-9"
-                                                                 class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module"
-                                                                 style="" data-hs-cos-general-type="widget"
-                                                                 data-hs-cos-type="module">
-                                                                <a class="hs-button" style="
-                                                                  background: #37517e;
-                                                                  border: 3px #37517e;
-                                                                  --bs-btn-hover-bg: #3e4e68;
-                                                                  border-radius: 8px;
-                                                                  box-shadow: none;
-                                                                  color: #fff;" href="{{ route('contact-us.create') }}"
-                                                                   id="hs-button_dnd_area_101-dnd_partial-2-module-9"
-                                                                   rel=""> Contact us </a>
-                                                            </div>
-                                                        </div>
-                                                        <!--end widget-span -->
-                                                    </div>
-                                                    <!--end row-->
-                                                </div>
-                                                <!--end row-wrapper -->
-                                            </div>
-                                            <!--end widget-span -->
-                                        </div>
-                                        <!--end row-->
-                                    </div>
-                                    <!--end row-wrapper -->
-                                </div>
-                                <!--end widget-span -->
-                            </div>
-                            <!--end row-->
-                        </div>
-
-                    </div>
-                    <!--end widget-span -->
-                </div>
+    <div id="banner-area">
+        <img src="{{ asset('assets2/images/banner/banner1.jpg') }}" alt=""/>
+        <div class="parallax-overlay"></div>
+        <!-- Subpage title start -->
+        <div class="banner-title-content">
+            <div class="text-center">
+                <h2>About Us</h2>
+                <ul class="breadcrumb">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Company</li>
+                    <li>About Us</li>
+                </ul>
             </div>
+        </div><!-- Subpage title end -->
+    </div><!-- Banner area end -->
+
+    <!-- Main container start -->
+
+    <section id="main-container">
+        <div class="container">
+
+            <!-- Company Profile -->
+            <div class="row">
+                <div class="col-md-12 heading">
+                    <span class="title-icon classic pull-left"><i class="fa fa-suitcase"></i></span>
+                    <h2 class="title classic">Company Profile</h2>
+                </div>
+            </div><!-- Title row end -->
+
+            <div class="row">
+                <div class="landing-tab clearfix">
+                    <ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
+                        <li class="active">
+                            <a class="animated fadeIn" href="#tab_a" data-toggle="tab">
+                                <span class="tab-icon"><i class="fa fa-info"></i></span>
+                                <div class="tab-info">
+                                    <h3>Who Are We</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="animated fadeIn" href="#tab_b" data-toggle="tab">
+                                <span class="tab-icon"><i class="fa fa-briefcase"></i></span>
+                                <div class="tab-info">
+                                    <h3>Our Company</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="animated fadeIn" href="#tab_c" data-toggle="tab">
+                                <span class="tab-icon"><i class="fa fa-android"></i></span>
+                                <div class="tab-info">
+                                    <h3>What We Do</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="animated fadeIn" href="#tab_d" data-toggle="tab">
+                                <span class="tab-icon"><i class="fa fa-pagelines"></i></span>
+                                <div class="tab-info">
+                                    <h3>Modern Design</h3>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="animated fadeIn" href="#tab_e" data-toggle="tab">
+                                <span class="tab-icon"><i class="fa fa-support"></i></span>
+                                <div class="tab-info">
+                                    <h3>Dedicated Support</h3>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content col-md-9 col-sm-7">
+                        <div class="tab-pane active animated fadeInRight" id="tab_a">
+                            <i class="fa fa-trophy big"></i>
+                            <h3>We Are Awwared Winning Company</h3>
+                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
+                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
+                                Duis lorem nulla, eleifend.</p>
+                        </div>
+                        <div class="tab-pane animated fadeInLeft" id="tab_b">
+                            <i class="fa fa-briefcase big"></i>
+                            <h3>We Have Worldwide Business</h3>
+                            <p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly PBR
+                                retro, Etsy VHS kitsch actually messenger bag pug. Pbrb semiotics try-hard, Schlitz
+                                occupy dreamcatcher master cleanse Marfa Vice tofu. </p>
+                        </div>
+                        <div class="tab-pane animated fadeIn" id="tab_c">
+                            <i class="fa fa-android big"></i>
+                            <h3>We Build Readymade Applications</h3>
+                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
+                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
+                                Duis lorem nulla, eleifend.</p>
+                        </div>
+                        <div class="tab-pane animated fadeIn" id="tab_d">
+                            <i class="fa fa-pagelines big"></i>
+                            <h3>Clean and Modern Design</h3>
+                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
+                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
+                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
+                                Duis lorem nulla, eleifend.</p>
+                        </div>
+                        <div class="tab-pane animated fadeIn" id="tab_e">
+                            <i class="fa fa-support big"></i>
+                            <h3>24/7 Dedicated Support</h3>
+                            <p>Occupy selfies Tonx, +1 Truffaut beard organic normcore tilde flannel artisan squid cray
+                                single-origin coffee. Master cleanse vinyl Austin kogi, semiotics skateboard fap
+                                wayfarers health goth. Helvetica cray church-key hashtag Carles. Four dollar toast
+                                meggings seitan, Tonx pork belly VHS Bushwick. Chambray banh mi cornhole. Locavore
+                                messenger bag seitan.</p>
+                        </div>
+                    </div><!-- tab content -->
+                </div><!-- Overview tab end -->
+            </div><!--/ Content row end -->
+
+            <!-- Company Profile -->
+
+        </div><!--/ 1st container end -->
+
+
+        <div class="gap-60"></div>
+
+
+        <!-- Counter Strat -->
+        <div class="ts_counter_bg parallax parallax2">
+            <div class="parallax-overlay"></div>
+            <div class="container">
+                <div class="row wow fadeInLeft text-center">
+                    <div class="facts col-md-3 col-sm-6">
+                        <span class="facts-icon"><i class="fa fa-user"></i></span>
+                        <div class="facts-num">
+                            <span class="counter">1200</span>
+                        </div>
+                        <h3>Clients</h3>
+                    </div>
+
+                    <div class="facts col-md-3 col-sm-6">
+                        <span class="facts-icon"><i class="fa fa-institution"></i></span>
+                        <div class="facts-num">
+                            <span class="counter">1277</span>
+                        </div>
+                        <h3>Item Sold</h3>
+                    </div>
+
+                    <div class="facts col-md-3 col-sm-6">
+                        <span class="facts-icon"><i class="fa fa-suitcase"></i></span>
+                        <div class="facts-num">
+                            <span class="counter">869</span>
+                        </div>
+                        <h3>Projects</h3>
+                    </div>
+
+                    <div class="facts col-md-3 col-sm-6">
+                        <span class="facts-icon"><i class="fa fa-trophy"></i></span>
+                        <div class="facts-num">
+                            <span class="counter">76</span>
+                        </div>
+                        <h3>Awwards</h3>
+                    </div>
+
+                    <div class="gap-40"></div>
+
+                    <div><a href="#" class="btn btn-primary solid">See Our Portfolio</a></div>
+
+                </div><!--/ row end -->
+            </div><!--/ Container end -->
+        </div><!--/ Counter end -->
+
+        <div class="gap-60"></div>
+
+
+        <div class="container">
+
+            <!-- Company Profile -->
+
+            <div class="row">
+                <div class="col-md-12 heading text-center">
+                    <h2 class="title2">About Our Company
+                        <span class="title-desc">A Quality Experience Team with 4 years experience</span>
+                    </h2>
+                </div>
+            </div><!-- Title row end -->
+
+            <div class="row about-wrapper-top">
+                <div class="col-md-6 ts-padding about-message">
+                    <h3>Who We Are</h3>
+                    <p>"Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis
+                        euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed
+                        posuere consectetur est at lobortis. Donec ullamcorper nulla non metus auctor fringilla. Lorem
+                        ipsum dolor sit amet mattis ut consequat mauris cursus.</p>
+                    <p>Curabitur metus felis, venenatis eu ultricies vel, vehicula eu urna. Phasellus eget augue id est
+                        fringilla feugiat id a tellus. Sed hendrerit quam sed ante euismod posuere element ante."</p>
+                </div><!--/ About message end -->
+                <div class="col-md-6 ts-padding about-img"
+                     style="height:374px;background:url('{{ asset('assets2/images/pages/about-1.jpg') }}') 50% 50% / cover no-repeat;">
+                </div><!--/ About image end -->
+            </div><!--/ Content row end -->
+
+            <div class="row about-wrapper-bottom">
+                <div class="col-md-6 ts-padding about-img"
+                     style="height:374px;background:url('{{ asset('assets2/images/pages/about-2.jpg') }}') 50% 50% / cover no-repeat;">
+                </div><!--/ About image end -->
+                <div class="col-md-6 ts-padding about-message">
+                    <h3>What We Do</h3>
+                    <p>"Cras mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis
+                        euismod. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed
+                        posuere consectetur est at lobortis.</p>
+                    <ul class="unstyled arrow">
+                        <li><a href="#">Etiam porta sem malesuada</a></li>
+                        <li><a href="#">Pellentesque ornare sem lacinia</a></li>
+                        <li><a href="#">Cras mattis consectetur purus</a></li>
+                        <li><a href="#">Sed hendrerit quam sed ante</a></li>
+                    </ul>
+                </div><!--/ About message end -->
+            </div><!--/ Content row end -->
+
+            <!-- Company Profile -->
+
         </div>
-    </main>
+    </section><!--/ Main container end -->
+
+
+
+    <div class="gap-40"></div>
 
 @endsection
