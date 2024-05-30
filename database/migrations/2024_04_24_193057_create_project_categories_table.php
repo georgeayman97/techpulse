@@ -12,7 +12,7 @@ return new class extends Migration {
     public function up(): void
     {
         Schema::create('project_categories', function (Blueprint $table) {
-            $table->uuid('id')->primary()->default(DB::raw('(UUID())'));
+            $table->uuid('id')->primary();
             $table->string('slug');
             $table->string('name_en');
             $table->string('name_ar')->nullable();
