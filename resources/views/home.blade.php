@@ -53,8 +53,9 @@
                                                                 <div class="content-wrapper">
                                                                     <div class="focus_hero_slide_inner">
                                                                         <div class="focus_hero_slide_inner-text">
-                                                                            <h1 class="focus_hero_title mhst1">We Are
-                                                                                Developers</h1>
+                                                                            <h1 class="focus_hero_title mhst1">
+                                                                                @lang('lang.Innovative Solutions for Your Business')
+                                                                            </h1>
                                                                             <p class="mhsp1">At TechPulse Solutions, we
                                                                                 are passionate developers crafting
                                                                                 innovative solutions. Our expertise
