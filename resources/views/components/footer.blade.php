@@ -1,5 +1,6 @@
 <!-- Footer start -->
-<section id="footer" class="footer footer-map" style="background: url('{{ asset('assets2/images/footer-bg.png') }}') no-repeat; background-size: cover;">
+<section id="footer" class="footer footer-map"
+         style="background: url('{{ asset('assets2/images/footer-bg.png') }}') no-repeat; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
@@ -21,15 +22,15 @@
                         <a title="linkedin" href="https://www.linkedin.com/company/techpulsesolutions1/about/">
                             <span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
                         </a>
-{{--                        <a title="Pinterest" href="#">--}}
-{{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>--}}
-{{--                        </a>--}}
-{{--                        <a title="Skype" href="#">--}}
-{{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>--}}
-{{--                        </a>--}}
-{{--                        <a title="Dribble" href="#">--}}
-{{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>--}}
-{{--                        </a>--}}
+                        {{--                        <a title="Pinterest" href="#">--}}
+                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>--}}
+                        {{--                        </a>--}}
+                        {{--                        <a title="Skype" href="#">--}}
+                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>--}}
+                        {{--                        </a>--}}
+                        {{--                        <a title="Dribble" href="#">--}}
+                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>--}}
+                        {{--                        </a>--}}
                     </li>
                 </ul>
             </div>
@@ -37,7 +38,9 @@
         <div class="row">
             <div class="col-md-12 text-center">
                 <div class="copyright-info">
-                    &copy; Copyright 2015 bizCraft. <span>Designed &amp; Developed by- <a href="#" target="_blank">TrippleS</a></span>
+                    &copy; Copyright 2024 Techpulse Solutions. <span>Designed &amp; Developed by-
+                        <a href="{{ route('home') }}" target="_blank">Techpulse Solutions.</a>
+                    </span>
                 </div>
             </div>
         </div><!--/ Row end -->

@@ -27,9 +27,9 @@
                             </h3>
                             <div>
                                 <a class="animated4 slider btn btn-primary btn-min-block white"
-                                   href="#">@lang('lang.Explore Our Services')</a><a
+                                   href="{{ route('service') }}">@lang('lang.Explore Our Services')</a><a
                                     class="animated4 slider btn btn-primary btn-min-block solid"
-                                    href="#">@lang('lang.Get a Free Quote')</a>
+                                    href="{{ route('contact-us.create') }}">@lang('lang.Get a Free Quote')</a>
                             </div>
                         </div>
                     </div>
@@ -44,8 +44,9 @@
                             <h3 class="animated5">
                                 @lang('lang.Creating Engaging Digital Experiences')
                             </h3>
-                            <p class="animated6"><a href="#"
-                                                    class="slider btn btn-primary white">@lang('lang.View Our Portfolio')</a>
+                            <p class="animated6">
+                                <a href="{{ route('projects') }}"
+                                   class="slider btn btn-primary white">@lang('lang.View Our Portfolio')</a>
                             </p>
                         </div>
                     </div>
@@ -62,9 +63,9 @@
                             </h3>
                             <div class="">
                                 <a class="animated4 slider btn btn-primary btn-min-block white"
-                                   href="#">@lang('lang.Learn More')</a><a
+                                   href="{{ route('about-us') }}">@lang('lang.Learn More')</a><a
                                     class="animated4 slider btn btn-primary btn-min-block solid"
-                                    href="#">@lang('lang.Contact Us')</a>
+                                    href="{{ route('contact-us.create') }}">@lang('lang.Contact Us')</a>
                             </div>
                         </div>
                     </div>
@@ -87,8 +88,10 @@
             <div class="row">
                 <div class="col-sm-12">
                     <h3>@lang('lang.Give Your Website a Brand New Look')</h3>
-                    <a href="#" class="pull-right btn btn-primary solid">@lang('lang.Revamp Now')</a>
-                    <a href="#" class="pull-right btn btn-primary white">@lang('lang.See Our Work')</a>
+                    <a href="{{ route('contact-us.create') }}"
+                       class="pull-right btn btn-primary solid">@lang('lang.Revamp Now')</a>
+                    <a href="{{ route('projects') }}"
+                       class="pull-right btn btn-primary white">@lang('lang.See Our Work')</a>
                 </div>
             </div>
         </div>
@@ -237,7 +240,8 @@
                     </ul>
                     <div class="tab-content col-md-9 col-sm-7">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <img class="img-responsive pull-left" src="images/tab/featured-tab1.png" alt="">
+                            <img class="img-responsive pull-left"
+                                 src="{{ asset('assets2/images/tab/featured-tab1.png') }}" alt="">
                             <h3>@lang('lang.TechPulse Solutions: Your Technology Partner')</h3>
                             <p>@lang("lang.At TechPulse Solutions, we're more than just a software company – we're your technology partner. With over two years of experience serving clients in the Middle East, Europe, and the US, we've earned a reputation for excellence and innovation. Lorem ipsum dolor sit amet, consectetur adipiscing elit.")</p>
                             <ul class="check-list">
@@ -253,7 +257,8 @@
                             </ul>
                         </div>
                         <div class="tab-pane animated fadeInLeft" id="tab_b">
-                            <img class="img-responsive pull-right" src="images/tab/featured-tab2.png" alt="">
+                            <img class="img-responsive pull-right"
+                                 src="{{ asset('assets2/images/tab/featured-tab2.png') }}" alt="">
                             <h3>@lang('lang.About TechPulse Solutions')</h3>
                             <p>@lang('lang.TechPulse Solutions is a leading software company specializing in website and mobile application development, ERP systems, and e-commerce solutions. With a talented team of over 40 professionals spread across Egypt, Dubai, the US, and Sweden, we leverage the latest technologies and best practices to deliver high-quality, scalable solutions to clients worldwide.')</p>
                             <ul class="check-list">
@@ -271,7 +276,8 @@
                         <div class="tab-pane animated fadeIn" id="tab_c">
                             <h3 class="text-center">@lang('lang.Our Services')</h3>
                             <p>@lang('lang.At TechPulse Solutions, we offer a comprehensive range of services to meet your business needs. Whether you need a custom website, a mobile app, an ERP system, or an e-commerce platform, we have the expertise to bring your vision to life.')</p>
-                            <img class="img-responsive" src="images/tab/featured-tab3.png" alt="">
+                            <img class="img-responsive" src="{{ asset('assets2/images/tab/featured-tab3.png') }}"
+                                 alt="">
                         </div>
                         <div class="tab-pane animated fadeIn" id="tab_d">
                             <h3>@lang('lang.Why Choose Us?')</h3>
@@ -297,7 +303,7 @@
                 </div><!-- Featured tab end -->
             </div><!-- Content row end -->
         </div><!-- Container end -->
-    </section><!--
+    </section>
 
 
 
@@ -307,35 +313,35 @@
         <div class="container-fluid">
             <div class="row facts-wrapper wow fadeInLeft text-center">
                 <div class="facts one col-md-3 col-sm-6">
-                    <span class="facts-icon"><i class="fa fa-user"></i></span>
+                    <span class="facts-icon"><i class="fa fa-code"></i></span>
                     <div class="facts-num">
-                        <span class="counter">1200</span>
+                        <span class="counter">40</span>
                     </div>
-                    <h3>Clients</h3>
+                    <h3>@lang('lang.Talented Developers')</h3>
                 </div>
 
                 <div class="facts two col-md-3 col-sm-6">
-                    <span class="facts-icon"><i class="fa fa-institution"></i></span>
+                    <span class="facts-icon"><i class="fa fa-globe"></i></span>
                     <div class="facts-num">
-                        <span class="counter">1277</span>
+                        <span class="counter">15</span>
                     </div>
-                    <h3>Item Sold</h3>
+                    <h3>@lang('lang.Countries Served')</h3>
                 </div>
 
                 <div class="facts three col-md-3 col-sm-6">
-                    <span class="facts-icon"><i class="fa fa-suitcase"></i></span>
+                    <span class="facts-icon"><i class="fa fa-calendar"></i></span>
                     <div class="facts-num">
-                        <span class="counter">869</span>
+                        <span class="counter">24</span>
                     </div>
-                    <h3>Projects</h3>
+                    <h3>@lang('lang.Months in Business')</h3>
                 </div>
 
                 <div class="facts four col-md-3 col-sm-6">
-                    <span class="facts-icon"><i class="fa fa-trophy"></i></span>
+                    <span class="facts-icon"><i class="fa fa-rocket"></i></span>
                     <div class="facts-num">
-                        <span class="counter">76</span>
+                        <span class="counter">48</span>
                     </div>
-                    <h3>Awwards</h3>
+                    <h3>@lang('lang.Projects Delivered')</h3>
                 </div>
 
             </div>
@@ -343,48 +349,49 @@
     </section><!--/ Counter end -->
 
 
-    <section id="featured-video" class="featured-video">
+    <!--/ Counter end -->
+
+
+    <!-- Featured Section Start -->
+    <section id="featured-section" class="featured-section">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="video-embed wow fadeIn" data-wow-duration="1s">
-                        <!-- Change the url -->
-                        <iframe
-                            src="//player.vimeo.com/video/72266001?title=0&amp;byline=0&amp;portrait=0&amp;color=8aba56"
-                            width="500" height="281" allowfullscreen></iframe>
+                    <div class="animation-embed wow fadeIn" data-wow-duration="1s">
+                        <!-- Lottie Animation -->
+                        <dotlottie-player src="https://lottie.host/973b0eb7-59f7-4fb9-a17f-ef1f6f195e25/BaPl5waTq5.json"
+                                          background="transparent" speed="1" style="width: 500px; height: 400px;" loop
+                                          autoplay></dotlottie-player>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="video-block-head">
-                        <h3>The MultiPurpose Theme</h3>
-                        <p>Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-                            nibh id elit. Proin gravida nibh vel velit auctor Aenean sollicitudin, adipisicing elit sed
-                            lorem quis bibendum auctor.
-                        </p>
+                    <div class="content-block-head">
+                        <h3>@lang('lang.Innovative Solutions for Your Business')</h3>
+                        <p>@lang('lang.At TechPulse Solutions, we provide cutting-edge technology solutions tailored to your business needs. Our services include website development, mobile application creation, ERP systems, and e-commerce solutions.')</p>
                     </div>
 
-                    <div class="video-block-content">
-                        <span class="feature-icon pull-left"><i class="fa fa-bicycle"></i></span>
+                    <div class="content-block">
+                        <span class="feature-icon pull-left"><i class="fa fa-code"></i></span>
                         <div class="feature-content">
-                            <h3>Tons of Features</h3>
-                            <p>Consectetur adipisicing elit sed do eiusmod tempor incididunt ut</p>
+                            <h3>@lang('lang.Latest Technologies')</h3>
+                            <p>@lang('lang.We use the latest technologies including Laravel, Node.js, React, and more to ensure your project is state-of-the-art.')</p>
                         </div>
                     </div><!--/ End 1st block -->
 
-                    <div class="video-block-content">
-                        <span class="feature-icon pull-left"><i class="fa fa-diamond"></i></span>
+                    <div class="content-block">
+                        <span class="feature-icon pull-left"><i class="fa fa-mobile"></i></span>
                         <div class="feature-content">
-                            <h3>PowerPack Theme</h3>
-                            <p>Proin gravida nibh vel velit auctor Aenean sollicitudin adipisicing</p>
+                            <h3>@lang('lang.Mobile Applications')</h3>
+                            <p>@lang('lang.Our expertise in Flutter, Swift, and Kotlin allows us to build robust and user-friendly mobile applications.')</p>
                         </div>
+                    </div><!--/ End 2nd block -->
 
-                        <a href="#" class="btn btn-primary solid">See More Video</a>
-                    </div><!--/ End 1st block -->
-
+                    <a href="{{ route('about-us') }}" class="btn btn-primary solid">@lang('lang.Learn More')</a>
                 </div>
             </div>
         </div>
     </section>
+
 
 
     <!-- Parallax 2 start -->
@@ -393,16 +400,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <h2>Are You Ready to Buy This Template!</h2>
-                    <h3>Just Click Button and Use Your Own</h3>
+                    <h2>@lang('lang.Are You Ready to Transform Your Business?')</h2>
+                    <h3>@lang('lang.Contact Us Today to Start Your Project')</h3>
                     <p>
-                        <a href="#" class="btn btn-primary white">Purchase Now</a>
-                        <a href="#" class="btn btn-primary solid">Get In Touch</a>
+                        <a href="{{ route('contact-us.create') }}"
+                           class="btn btn-primary white">@lang('lang.Get In Touch')</a>
+                        <a href="{{ route('projects') }}" class="btn btn-primary solid">@lang('lang.View Our Work')</a>
                     </p>
                 </div>
             </div>
         </div><!-- Container end -->
     </section><!-- Parallax 2 end -->
+
 
 
 
@@ -412,8 +421,8 @@
             <div class="row">
                 <div class="col-md-12 heading text-center">
                     <span class="icon-pentagon wow bounceIn animated"><i class="fa fa-envelope"></i></span>
-                    <h2 class="title2">Subscribe With Us
-                        <span class="title-desc">We Love to Work with Passion</span>
+                    <h2 class="title2">@lang('lang.Subscribe With Us')
+                        <span class="title-desc">@lang('lang.We Love to Work with Passion')</span>
                     </h2>
                 </div>
             </div>
@@ -425,9 +434,10 @@
                         @csrf
                         <div class="form-group">
                             <input type="email" name="email" id="newsletter-form-email"
-                                   class="form-control form-control-lg" placeholder="Enter your email address"
+                                   class="form-control form-control-lg"
+                                   placeholder="@lang('lang.Enter your email address')"
                                    autocomplete="off" required>
-                            <button class="btn btn-primary solid" type="submit">Subscribe</button>
+                            <button class="btn btn-primary solid" type="submit">@lang('lang.Subscribe')</button>
                         </div>
                     </form>
                 </div>
@@ -435,28 +445,4 @@
         </div><!--/ Container end -->
     </section><!-- Newsletter end -->
 
-
-    <!-- Map start here -->
-    {{--    <section id="map-wrapper" class="no-padding">--}}
-    {{--        <div class="container">--}}
-    {{--            <div class="contact-info-inner">--}}
-    {{--                <h3>Contact Info</h3>--}}
-    {{--                <div><i class="fa fa-map-marker pull-left"></i>--}}
-    {{--                    <p><strong>Address</strong>1102 Saint Marys, Junction City, KS</p>--}}
-    {{--                </div>--}}
-    {{--                <div><i class="fa fa-phone pull-left"></i>--}}
-    {{--                    <p><strong>Phone</strong>+(785) 238-4131</p>--}}
-    {{--                </div>--}}
-    {{--                <div><i class="fa fa-envelope-o pull-left"></i>--}}
-    {{--                    <p><strong>Email</strong>info@bizcraft.com</p>--}}
-    {{--                </div>--}}
-    {{--                <div><i class="fa fa-compass pull-left"></i>--}}
-    {{--                    <p><strong>Office Hours</strong>Mon - Friday, 9:00 - 5:00</p>--}}
-    {{--                </div>--}}
-
-    {{--            </div>--}}
-    {{--        </div>--}}
-    {{--        <div class="map" id="map"></div>--}}
-    {{--    </section>--}}
-    <!--/ Map end here -->
 @endsection

@@ -14,7 +14,7 @@
                 <div class="navbar-brand">
                     <a href="{{ LaravelLocalization::localizeURL(route('home')) }}">
                         <img class="img-responsive" src="{{ asset('assets2/images/logo-primary.png') }}" alt="logo"
-                             width="300" height="100">
+                             width="" height="100">
                     </a>
                 </div>
             </div><!--/ Logo end -->
@@ -28,7 +28,8 @@
                                 class="fa fa-angle-down"></i></a>
                         <div class="dropdown-menu">
                             <ul>
-                                <li class="@if(Request::url() == route('about-us')) active @endif"><a
+                                <li class="@if(Request::url() == route('about-us')) active @endif"
+                                    style="padding-top: 10px;"><a
                                         href="{{ LaravelLocalization::localizeURL(route('about-us')) }}">About Us</a>
                                 </li>
                                 <li class="@if(Request::url() == route('service')) active @endif"><a
@@ -48,7 +49,8 @@
                         <div class="dropdown-menu">
                             <ul>
                                 <li>
-                                    <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('en') }}">English</a>
+                                    <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('en') }}"
+                                       style="padding-top: 25px;">English</a>
                                 </li>
                                 <li>
                                     <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('sw') }}">Swedish</a>
