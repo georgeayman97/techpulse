@@ -1,52 +1,87 @@
-<!-- Footer start -->
-<section id="footer" class="footer footer-map"
-         style="background: url('{{ asset('assets2/images/footer-bg.png') }}') no-repeat; background-size: cover;">
+<div class="footer-area style-one">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center">
+            <div class="col-lg-4 col-md-6">
                 <div class="footer-logo">
-                    <img src="{{ asset('assets2/images/logo-primary.png') }}" alt="logo">
+                    <a href="index.html"><img src="assets/images/logo-2.png" alt=""></a>
                 </div>
-                <div class="gap-20"></div>
-                <ul class="social-icon dark unstyled">
-                    <li>
-                        <a title="Twitter" href="#">
-                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-instagram"></i></span>
-                        </a>
-                        <a title="Facebook" href="#">
-                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-facebook"></i></span>
-                        </a>
-                        <a title="Google+" href="mailto:info@techpulse-solutions.com">
-                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-send"></i></span>
-                        </a>
-                        <a title="linkedin" href="https://www.linkedin.com/company/techpulsesolutions1/about/">
-                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-linkedin"></i></span>
-                        </a>
-                        {{--                        <a title="Pinterest" href="#">--}}
-                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-pinterest"></i></span>--}}
-                        {{--                        </a>--}}
-                        {{--                        <a title="Skype" href="#">--}}
-                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-skype"></i></span>--}}
-                        {{--                        </a>--}}
-                        {{--                        <a title="Dribble" href="#">--}}
-                        {{--                            <span class="icon-pentagon wow bounceIn"><i class="fa fa-dribbble"></i></span>--}}
-                        {{--                        </a>--}}
-                    </li>
-                </ul>
-            </div>
-        </div><!--/ Row end -->
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <div class="copyright-info">
-                    &copy; Copyright 2024 Techpulse Solutions. <span>Designed &amp; Developed by-
-                        <a href="{{ route('home') }}" target="_blank">Techpulse Solutions.</a>
-                    </span>
+                <div class="footer-widget-desc">
+                    <p>Monotonectally synergize granular top
+                        visualize strategic infomediaries afters
+                        task state of the art infrastructures
+                        digital agency in north</p>
+                </div>
+                <div class="toptech-button inner-style">
+                    <a href="#">Discover More<i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
-        </div><!--/ Row end -->
-        <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top affix">
-            <button class="btn btn-primary" title="Back to Top"><i class="fa fa-angle-double-up"></i></button>
+            <div class="col-lg-2 col-md-6">
+                <div class="footer-widget-content">
+                    <div class="footer-widget-title">
+                        <h4>Company</h4>
+                    </div>
+                    <div class="footer-widget-menu">
+                        <ul>
+                            <li><a href="about-1.html"><i class="bi bi-arrow-right-circle"></i>About</a></li>
+                            <li><a href="team.html"><i class="bi bi-arrow-right-circle"></i>Our Team</a></li>
+                            <li><a href="pricing.html"><i class="bi bi-arrow-right-circle"></i>Pricing Plan</a></li>
+                            <li><a href="blog-grid.html"><i class="bi bi-arrow-right-circle"></i>Latest Blog</a></li>
+                            <li><a href="careers.html"><i class="bi bi-arrow-right-circle"></i>Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget-content">
+                    <div class="footer-widget-title">
+                        <h4>Our Services</h4>
+                    </div>
+                    <div class="footer-widget-menu">
+                        <ul>
+                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>IT Solutions</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Cyber Security</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Digital Marketing</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Brand Identity</a></li>
+                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>SEO Marketing</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="footer-widget-content">
+                    <div class="footer-widget-title">
+                        <h4>Newsletter</h4>
+                    </div>
+                    <p class="f-desc-2">Subscribe our Latest Newsletter</p>
+                    <form action="#">
+                        <div class="footer-newslatter-box">
+                            <input type="text" name="Email" placeholder="Enter Your E-Mail" required>
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div><!--/ Container end -->
-</section>
-<!--/ Footer end -->
+        <div class="row align-items-center">
+            <div class="footer-bottom-area">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-bottom-content">
+                            <p>© 2024 Toptech. Designed By Dream IT Solution</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="footer-botton-social-icon">
+                            <ul>
+                                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

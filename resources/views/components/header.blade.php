@@ -1,69 +1,93 @@
-@php use \Illuminate\Support\Facades\Request; @endphp
-    <!-- Header start -->
-<header id="header" class="navbar-fixed-top header4" role="banner">
+<div class="header-area" id="sticky-header">
     <div class="container">
-        <div class="row">
-            <!-- Logo start -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <div class="navbar-brand">
-                    <a href="{{ LaravelLocalization::localizeURL(route('home')) }}">
-                        <img class="img-responsive" src="{{ asset('assets2/images/logo-primary.png') }}" alt="logo"
-                             width="" height="100">
-                    </a>
+        <div class="row align-items-center">
+            <div class="col-lg-3">
+                <div class="header-logo">
+                    <a href="{{ route('home') }}"><img src="assets/images/logo-1.png" alt="logo"></a>
                 </div>
-            </div><!--/ Logo end -->
-            <nav class="collapse navbar-collapse clearfix" role="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="@if(Request::url() == route('home')) active @endif">
-                        <a href="{{ LaravelLocalization::localizeURL(route('home')) }}">Home</a>
-                    </li>
-                    <li class="dropdown @if(in_array(Request::url(),[route('about-us'),route('service')])) active @endif">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Company <i
-                                class="fa fa-angle-down"></i></a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li class="@if(Request::url() == route('about-us')) active @endif"
-                                    style="padding-top: 10px;"><a
-                                        href="{{ LaravelLocalization::localizeURL(route('about-us')) }}">About Us</a>
-                                </li>
-                                <li class="@if(Request::url() == route('service')) active @endif"><a
-                                        href="{{ LaravelLocalization::localizeURL(route('service')) }}">Services</a>
-                                </li>
+            </div>
+            <div class="col-lg-9">
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="{{ route('home') }}">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li class="menu-item-has-children"><a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="about-1.html">About Us 1</a></li>
+                                <li><a href="about-2.html">About Us 2</a></li>
+                                <li><a href="service.html">Service</a></li>
+                                <li><a href="service-details.html">Service Details</a></li>
+                                <li><a href="project.html">Project</a></li>
+                                <li><a href="project-details.html">Project Details </a></li>
+                                <li><a href="team.html">Team</a></li>
+                                <li><a href="careers.html">Careers</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="faqs.html">Faqs</a></li>
                             </ul>
-                        </div>
-                    </li>
-                    <li class="@if(Request::url() == route('projects')) active @endif">
-                        <a href="{{ LaravelLocalization::localizeURL(route('projects')) }}">Our Projects</a>
-                    </li>
-                    <li class="@if(Request::url() == route('contact-us.create')) active @endif"><a
-                            href="{{ LaravelLocalization::localizeURL(route('contact-us.create')) }}">Contact</a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Language <i
-                                class="fa fa-angle-down"></i></a>
-                        <div class="dropdown-menu">
-                            <ul>
-                                <li>
-                                    <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('en') }}"
-                                       style="padding-top: 25px;">English</a>
-                                </li>
-                                <li>
-                                    <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('sw') }}">Swedish</a>
-                                </li>
-                                <li>
-                                    <a href="{{ \Mcamara\LaravelLocalization\Facades\LaravelLocalization::setLocale('sp') }}">Spanish</a>
-                                </li>
+                        </li>
+                        <li class="menu-item-has-children"><a href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                            <ul class="sub-menu">
+                                <li><a href="blog-grid.html">Blog Grid</a></li>
+                                <li><a href="blog-details.html">Blog Details </a></li>
                             </ul>
-                        </div>
-                    </li>
-                </ul>
-            </nav><!--/ Navigation end -->
-        </div><!--/ Row end -->
-    </div><!--/ Container end -->
-</header>
-<!--/ Header end -->
+                        </li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="header-button">
+                        <a href="contact.html">Get A Quote</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mobile-menu-area sticky d-sm-block d-md-block d-lg-none ">
+    <div class="mobile-menu">
+        <nav class="header-menu">
+            <ul class="nav_scroll">
+                <li class="menu-item-has-children"><a href="#">Home<i class="fas fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="index.html">Home 1</a></li>
+                        <li><a href="index-2.html">Home 2</a></li>
+                        <li><a href="index-3.html">Home 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">About<i class="fas fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="about-1.html">About Us 1</a></li>
+                        <li><a href="about-2.html">About Us 2</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Service<i class="fas fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Pages<i class="fas fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="about-1.html">About Us 1</a></li>
+                        <li><a href="about-2.html">About Us 2</a></li>
+                        <li><a href="service.html">Service</a></li>
+                        <li><a href="service-details.html">Service Details</a></li>
+                        <li><a href="project.html">Project</a></li>
+                        <li><a href="project-details.html">Project Details </a></li>
+                        <li><a href="team.html">Team</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="faqs.html">Faqs</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Blog<i class="fas fa-chevron-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="blog-grid.html">Blog Grid</a></li>
+                        <li><a href="blog-details.html">Blog Details </a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
