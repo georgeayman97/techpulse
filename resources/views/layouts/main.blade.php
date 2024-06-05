@@ -99,6 +99,7 @@
     <!-- Doc https://developers.google.com/maps/documentation/javascript/get-api-key -->
     <script type="text/javascript" src="{{ asset('assets2/js/gmap3.js') }}"></script>
 
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
     <!-- Template custom -->
     <script type="text/javascript" src="{{ asset('assets2/js/custom.js') }}"></script>

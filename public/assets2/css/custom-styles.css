@@ -66,3 +66,10 @@ ul.navbar-nav > li:hover > a, ul.navbar-nav > li.active > a {
 figure.effect-oscar h3 {
     font-size: 14px;
 }
+
+.service-image img {
+    width: 100%; /* Ensures the image takes up the full width of the container */
+    height: 300px; /* Sets a fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the container without distorting */
+    display: block; /* Removes any bottom spacing around the image */
+}

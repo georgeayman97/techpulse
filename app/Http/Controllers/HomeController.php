@@ -11,7 +11,6 @@ use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Illuminate\Http\RedirectResponse;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
@@ -33,7 +32,7 @@ class HomeController extends Controller
     {
         $getHomeService = $this->getHomeService->execute();
 
-        return view('main', [
+        return view('home', [
             'categories' => $getHomeService->getCategories()
         ]);
     }

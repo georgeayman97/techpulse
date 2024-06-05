@@ -25,8 +25,8 @@
             <!-- Company Profile -->
             <div class="row">
                 <div class="col-md-12 heading">
-                    <span class="title-icon classic pull-left"><i class="fa fa-suitcase"></i></span>
-                    <h2 class="title classic">Company Profile</h2>
+                    <span class="title-icon classic pull-left"><i class="fa fa-cogs"></i></span>
+                    <h2 class="title classic">TechPulse Solutions</h2>
                 </div>
             </div><!-- Title row end -->
 
@@ -35,85 +35,85 @@
                     <ul class="nav nav-tabs nav-stacked col-md-3 col-sm-5">
                         <li class="active">
                             <a class="animated fadeIn" href="#tab_a" data-toggle="tab">
-                                <span class="tab-icon"><i class="fa fa-info"></i></span>
+                                <span class="tab-icon"><i class="fa fa-info-circle"></i></span>
                                 <div class="tab-info">
-                                    <h3>Who Are We</h3>
+                                    <h3>About Us</h3>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a class="animated fadeIn" href="#tab_b" data-toggle="tab">
-                                <span class="tab-icon"><i class="fa fa-briefcase"></i></span>
+                                <span class="tab-icon"><i class="fa fa-laptop-code"></i></span>
                                 <div class="tab-info">
-                                    <h3>Our Company</h3>
+                                    <h3>Services</h3>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a class="animated fadeIn" href="#tab_c" data-toggle="tab">
-                                <span class="tab-icon"><i class="fa fa-android"></i></span>
+                                <span class="tab-icon"><i class="fa fa-map-marker-alt"></i></span>
                                 <div class="tab-info">
-                                    <h3>What We Do</h3>
+                                    <h3>Locations</h3>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a class="animated fadeIn" href="#tab_d" data-toggle="tab">
-                                <span class="tab-icon"><i class="fa fa-pagelines"></i></span>
+                                <span class="tab-icon"><i class="fa fa-users"></i></span>
                                 <div class="tab-info">
-                                    <h3>Modern Design</h3>
+                                    <h3>Team</h3>
                                 </div>
                             </a>
                         </li>
                         <li>
                             <a class="animated fadeIn" href="#tab_e" data-toggle="tab">
-                                <span class="tab-icon"><i class="fa fa-support"></i></span>
+                                <span class="tab-icon"><i class="fa fa-globe-europe"></i></span>
                                 <div class="tab-info">
-                                    <h3>Dedicated Support</h3>
+                                    <h3>Serving Regions</h3>
                                 </div>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content col-md-9 col-sm-7">
                         <div class="tab-pane active animated fadeInRight" id="tab_a">
-                            <i class="fa fa-trophy big"></i>
-                            <h3>We Are Awwared Winning Company</h3>
-                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
-                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                                Duis lorem nulla, eleifend.</p>
+                            <i class="fa fa-building big"></i>
+                            <h3>Established Software House</h3>
+                            <p>TechPulse Solutions is a dynamic software development company specializing in web and
+                                mobile application development, ERP systems, and e-commerce solutions. With a talented
+                                team of over 40 professionals, we leverage cutting-edge technologies such as Laravel,
+                                PHP, Node.js, Python, React, Bootstrap, Tailwind, Angular, Flutter, Swift, Kotlin,
+                                Shopify, WordPress, AWS, and Azure to deliver high-quality software solutions.</p>
                         </div>
                         <div class="tab-pane animated fadeInLeft" id="tab_b">
-                            <i class="fa fa-briefcase big"></i>
-                            <h3>We Have Worldwide Business</h3>
-                            <p>Helvetica cold-pressed lomo messenger bag ugh. Vinyl jean shorts Austin pork belly PBR
-                                retro, Etsy VHS kitsch actually messenger bag pug. Pbrb semiotics try-hard, Schlitz
-                                occupy dreamcatcher master cleanse Marfa Vice tofu. </p>
+                            <i class="fa fa-tools big"></i>
+                            <h3>Comprehensive Services</h3>
+                            <p>We offer a wide range of services including website development, mobile app creation, ERP
+                                system implementation, and e-commerce platform setup. Our expertise spans across various
+                                technologies and platforms, ensuring that we can cater to a broad spectrum of client
+                                needs.</p>
                         </div>
                         <div class="tab-pane animated fadeIn" id="tab_c">
-                            <i class="fa fa-android big"></i>
-                            <h3>We Build Readymade Applications</h3>
-                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
-                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                                Duis lorem nulla, eleifend.</p>
+                            <i class="fa fa-map-markers-alt big"></i>
+                            <h3>Global Presence</h3>
+                            <p>With offices in Egypt, Dubai, and the United States, and serving clients throughout
+                                Europe, the Middle East, and the US, TechPulse Solutions has a strong global presence.
+                                Our team is committed to delivering top-notch software solutions tailored to meet the
+                                unique requirements of businesses worldwide.</p>
                         </div>
                         <div class="tab-pane animated fadeIn" id="tab_d">
-                            <i class="fa fa-pagelines big"></i>
-                            <h3>Clean and Modern Design</h3>
-                            <p>Over the year we have lots of experience in our field. In sit amet massa sapien.
-                                Vestibulum diam turpis, gravida in lobortis id, ornare a eros. Lorem ipsum dolor sit
-                                amet, consectetur adipiscing elit. Aliquam sagittis nulla non elit dignissim suscipit.
-                                Duis lorem nulla, eleifend.</p>
+                            <i class="fa fa-users big"></i>
+                            <h3>Diverse & Talented Team</h3>
+                            <p>Our team comprises over 40 skilled professionals who are passionate about technology and
+                                dedicated to excellence. We pride ourselves on being highly scalable, allowing us to
+                                quickly adapt and grow our team to meet the demands of our expanding client base.</p>
                         </div>
                         <div class="tab-pane animated fadeIn" id="tab_e">
-                            <i class="fa fa-support big"></i>
-                            <h3>24/7 Dedicated Support</h3>
-                            <p>Occupy selfies Tonx, +1 Truffaut beard organic normcore tilde flannel artisan squid cray
-                                single-origin coffee. Master cleanse vinyl Austin kogi, semiotics skateboard fap
-                                wayfarers health goth. Helvetica cray church-key hashtag Carles. Four dollar toast
-                                meggings seitan, Tonx pork belly VHS Bushwick. Chambray banh mi cornhole. Locavore
-                                messenger bag seitan.</p>
+                            <i class="fa fa-globe-europe big"></i>
+                            <h3>Wide Reach</h3>
+                            <p>From Europe to the US and across the Middle East, TechPulse Solutions supports businesses
+                                in their digital transformation journey. Our extensive reach allows us to serve clients
+                                effectively, regardless of their location, ensuring they receive the highest quality
+                                software solutions.</p>
                         </div>
                     </div><!-- tab content -->
                 </div><!-- Overview tab end -->
