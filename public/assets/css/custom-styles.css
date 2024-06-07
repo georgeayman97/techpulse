@@ -1,0 +1,49 @@
+.header-menu ul li .active {
+    color: #0c5adb !important;
+}
+
+.style-three.contact-area-info {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 123px 0 166px;
+}
+
+.choose-us-area.inner-style {
+    padding: 75px 0 100px;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: repeat;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.inner-style .single-choose-us-box {
+    text-align: center;
+    padding: 0 3px 0;
+    margin-bottom: 20px;
+}
+
+.inner-style .single-choose-us-box {
+    text-align: center;
+}
+
+.inner-style .single-choose-us-box {
+    text-align: center;
+}
+
+.choose-us-area.inner-style .row.add-marging {
+    margin-top: 106px;
+    border-top: 1px solid #0c5adb;
+    padding-top: 103px;
+}
+
+
+/* If you need to specifically target only the vertical scrollbar */
+/* Hide scrollbar for IE, Edge and Firefox */
+html, body {
+    scrollbar-width: none; /* Firefox */
+}
+
