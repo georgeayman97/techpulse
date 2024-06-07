@@ -1355,7 +1355,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 119px 0 32px;
+    padding: 82px 0 32px;
 }
 
 .style-one.footer-area.home-three {
@@ -3719,9 +3719,10 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 111px 0 293px;
+    padding: 111px 0 80px;
 }
 
+/*293px*/
 .style-three.subscribe-area .section-title.left h1 {
     color: #fff;
 }
@@ -3767,11 +3768,7 @@ Tags: consulting, finance, corporate, business, consultant, multipurpose, techno
 }
 
 .style-three.process-area .row.add-bg {
-    background: url(../images/home-3/process-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 116px 0 77px;
+    padding: 70px 0 70px;
     margin-top: -200px;
     border-radius: 5px;
 }

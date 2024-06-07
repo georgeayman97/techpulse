@@ -40,7 +40,16 @@ class ContactController extends Controller
         try {
             DB::beginTransaction();
             $this->contactService->setData(
-                $request->only('name', 'email', 'subject', 'company_name', 'company_field', 'country', 'message')
+                $request->only(
+                    'name',
+                    'email',
+                    'phone',
+                    'subject',
+                    'company_name',
+                    'company_field',
+                    'country',
+                    'message'
+                )
             )->execute();
             DB::commit();
             return redirect()->route('home');

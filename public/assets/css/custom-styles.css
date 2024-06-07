@@ -47,3 +47,9 @@ html, body {
     scrollbar-width: none; /* Firefox */
 }
 
+@media (min-width: 992px) {
+    .inner-style-one .about-left {
+        left: 0;
+    }
+}
+

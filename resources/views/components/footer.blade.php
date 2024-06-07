@@ -1,4 +1,5 @@
-<div class="footer-area style-one" style="background: url({{ asset('assets/media/footer-bg.jpg') }});">
+<div class="footer-area style-one"
+     style="background: url({{ asset('assets/media/footer-bg.jpg') }});   background-repeat: no-repeat; object-fit: cover">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">

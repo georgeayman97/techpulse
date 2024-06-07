@@ -20,35 +20,18 @@
         </div>
     </div>
 
-    <div class="about-area inner-style-one">
+    <div class="about-area inner-style-two" style="
+    background: url({{ asset('assets/images/about-inner/about-bg.jpg') }});
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-repeat: no-repeat;
+    background-size: auto;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <div class="about-left">
                         <div class="about-thumb">
-                            <img src="{{ asset('assets/media/about-thumb.png') }}" alt="">
-                        </div>
-                        <div class="abour-award-box">
-                            <div class="about-award-icon">
-                                <img src="{{ asset('assets/images/about-inner/about-award-icon.png') }}" alt="">
-                            </div>
-                            <div class="about-award-content">
-                                <h4>Award Wining</h4>
-                                <p>Best Services</p>
-                            </div>
-                        </div>
-                        <div class="about-conuter-box">
-                            <div class="about-counter-icon">
-                                <img src="{{ asset('assets/images/about-inner/about-counter-icon.png') }}" alt="">
-                            </div>
-                            <div class="about-counter-content odometer-wrapper" data-count="283">
-                                <h4>283</h4>
-                                <span>K+</span>
-                                <p>Complete Project</p>
-                            </div>
-                        </div>
-                        <div class="about-shape">
-                            <img src="{{ asset('assets/images/about-inner/about-shape.png') }}" alt="">
+                            <img src="{{ asset('assets/media/about-thumb-2.png') }}" alt="">
                         </div>
                     </div>
                 </div>
@@ -82,8 +65,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="toptech-button inner-style">
-                        <a href="#">More About<i class="bi bi-arrow-right-short"></i></a>
+                    <div class="about-single-button">
+                        <a href="#">Our Services</a>
+                    </div>
+                    <div class="about-single-button">
+                        <a href="#">Contact us</a>
                     </div>
                 </div>
             </div>

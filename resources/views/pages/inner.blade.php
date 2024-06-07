@@ -1,5 +1,4 @@
-@php use App\Enum\MediaCollection; @endphp
-@extends('layouts.main')
+@extends('layouts.master')
 @section('content')
     <div id="banner-area">
         <img src="{{ asset('assets2/images/banner/banner2.jpg') }}" alt=""/>
