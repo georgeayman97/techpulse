@@ -65,7 +65,7 @@
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-2.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-2.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Cloud Services</h4>
@@ -78,7 +78,7 @@
                             </div>
                             <div class="flip-box-back">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-2.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-2.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Cloud Services</h4>
@@ -97,7 +97,7 @@
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-3.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-3.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Machine Learning</h4>
@@ -110,7 +110,7 @@
                             </div>
                             <div class="flip-box-back">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-3.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-3.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Machine Learning</h4>
@@ -129,7 +129,7 @@
                         <div class="flip-box-inner">
                             <div class="flip-box-front">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-4.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-4.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Data Security</h4>
@@ -142,7 +142,7 @@
                             </div>
                             <div class="flip-box-back">
                                 <div class="flip-box-thumb">
-                                    <img src="assets/images/home-1/feature-icon-4.png" alt="">
+                                    <img src="{{ asset('assets/media/feature-icon-4.png') }}" alt="">
                                 </div>
                                 <div class="flip-box-content">
                                     <h4>Data Security</h4>
@@ -161,12 +161,36 @@
     </div>
 
 
-    <div class="about-area style-one">
+    <div class="about-area style-one ">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="about-thumb">
-                        <img src="{{ asset('assets/media/about-thumb.png') }}" alt="">
+                <div class="col-lg-6 inner-style-one">
+                    <div class="about-left">
+                        <div class="about-thumb">
+                            <img src="{{ asset('assets/media/about-thumb.png') }}" alt="">
+                        </div>
+                        <div class="abour-award-box">
+                            <div class="about-award-icon">
+                                <img src="{{ asset('assets/images/about-inner/about-award-icon.png') }}" alt="">
+                            </div>
+                            <div class="about-award-content">
+                                <h4>Award Wining</h4>
+                                <p>Best Services</p>
+                            </div>
+                        </div>
+                        <div class="about-conuter-box">
+                            <div class="about-counter-icon">
+                                <img src="{{ asset('assets/images/about-inner/about-counter-icon.png') }}" alt="">
+                            </div>
+                            <div class="about-counter-content odometer-wrapper" data-count="283">
+                                <h4>283</h4>
+                                <span>K+</span>
+                                <p>Complete Project</p>
+                            </div>
+                        </div>
+                        <div class="about-shape">
+                            <img src="{{ asset('assets/images/about-inner/about-shape.png') }}" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -221,7 +245,7 @@
     </div>
 
 
-    <div class="service-area style-one">
+    <div class="service-area style-one" style="background: url({{ asset('assets/media/service-bg.jpg') }});">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

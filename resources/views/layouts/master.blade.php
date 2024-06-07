@@ -37,6 +37,7 @@
     <link rel="stylesheet" href="{{ asset('assets/css/coustom-animation.css') }}" type="text/css" media="all">
     <!-- modernizr js -->
     <script src="{{ asset('assets/js/vendor/modernizr-3.5.0.min.js') }}"></script>
+    <link rel="stylesheet" href="{{ asset('assets/css/custom-styles.css') }}" type="text/css" media="all">
 </head>
 
 <body>

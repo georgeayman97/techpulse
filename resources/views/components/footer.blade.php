@@ -1,4 +1,4 @@
-<div class="footer-area style-one">
+<div class="footer-area style-one" style="background: url({{ asset('assets/media/footer-bg.jpg') }});">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 col-md-6">
@@ -12,7 +12,7 @@
                         digital agency in north</p>
                 </div>
                 <div class="toptech-button inner-style">
-                    <a href="#">Discover More<i class="bi bi-arrow-right-short"></i></a>
+                    <a href="{{ route('service') }}">Discover More<i class="bi bi-arrow-right-short"></i></a>
                 </div>
             </div>
             <div class="col-lg-2 col-md-6">
@@ -22,11 +22,14 @@
                     </div>
                     <div class="footer-widget-menu">
                         <ul>
-                            <li><a href="about-1.html"><i class="bi bi-arrow-right-circle"></i>About</a></li>
-                            <li><a href="team.html"><i class="bi bi-arrow-right-circle"></i>Our Team</a></li>
-                            <li><a href="pricing.html"><i class="bi bi-arrow-right-circle"></i>Pricing Plan</a></li>
-                            <li><a href="blog-grid.html"><i class="bi bi-arrow-right-circle"></i>Latest Blog</a></li>
-                            <li><a href="careers.html"><i class="bi bi-arrow-right-circle"></i>Careers</a></li>
+                            <li><a href="{{ route('home') }}"><i class="bi bi-arrow-right-circle"></i>Home</a></li>
+                            <li><a href="{{ route('about-us') }}"><i class="bi bi-arrow-right-circle"></i>About</a></li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>Services</a>
+                            </li>
+                            <li><a href="{{ route('projects') }}"><i class="bi bi-arrow-right-circle"></i>Our Work</a>
+                            </li>
+                            <li><a href="{{ route('contact-us.create') }}"><i class="bi bi-arrow-right-circle"></i>Contact
+                                    Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -38,11 +41,16 @@
                     </div>
                     <div class="footer-widget-menu">
                         <ul>
-                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>IT Solutions</a></li>
-                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Cyber Security</a></li>
-                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Digital Marketing</a></li>
-                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>Brand Identity</a></li>
-                            <li><a href="#"><i class="bi bi-arrow-right-circle"></i>SEO Marketing</a></li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>IT
+                                    Solutions</a></li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>Cyber Security</a>
+                            </li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>Digital
+                                    Marketing</a></li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>Brand Identity</a>
+                            </li>
+                            <li><a href="{{ route('service') }}"><i class="bi bi-arrow-right-circle"></i>SEO
+                                    Marketing</a></li>
                         </ul>
                     </div>
                 </div>
@@ -67,7 +75,8 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <div class="footer-bottom-content">
-                            <p>© 2024 Toptech. Designed By Dream IT Solution</p>
+                            <p>&copy; Copyright 2024 Techpulse Solutions. <span>Designed &amp; Developed by-
+                                    Techpulse Solutions.</span></p>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6">
