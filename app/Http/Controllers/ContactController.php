@@ -19,7 +19,8 @@ class ContactController extends Controller
      */
     public function __construct(
         private readonly StoreContactService $contactService,
-    ) {
+    )
+    {
     }
 
     /**

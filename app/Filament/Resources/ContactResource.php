@@ -28,6 +28,9 @@ class ContactResource extends Resource
                     ->email()
                     ->required()
                     ->maxLength(255),
+                Forms\Components\TextInput::make('phone')
+                    ->required()
+                    ->maxLength(255),
                 Forms\Components\TextInput::make('subject')
                     ->required()
                     ->maxLength(255),

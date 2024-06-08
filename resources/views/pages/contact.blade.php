@@ -68,7 +68,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <div class="single-input-box">
-                                        <textarea name="massage" id="massage" placeholder="Write Massage"
+                                        <textarea name="message" id="massage" placeholder="Write Massage"
                                                   required></textarea>
                                     </div>
                                 </div>
