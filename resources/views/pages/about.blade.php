@@ -2,7 +2,7 @@
 @section('title','About')
 @section('content')
 
-    <div class="breadcumb-area" style="background: url({{ asset('assets/media/breadcumb-bg.jpg') }});
+    <div class="breadcumb-area" style="background: url({{ asset('assets/media/breadcumb-bg.png') }});
             background-repeat: no-repeat; background-size: cover;">
         <div class="container">
             <div class="row">
