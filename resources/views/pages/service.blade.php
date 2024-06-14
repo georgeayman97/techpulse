@@ -211,7 +211,7 @@
         </div>
     </div>
 
-    <div class="brand-area style-two" style="background: url({{ asset('assets/media/brand-bg.jpg') }});">
+    <div class="brand-area style-two" style="background: url({{ asset('assets/media/brand-bg.png') }});">
         <div class="container">
             <div class="row">
                 <div class="brand-list-1 owl-carousel">
