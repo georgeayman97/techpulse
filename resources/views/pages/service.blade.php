@@ -1,257 +1,405 @@
 @extends('layouts.master')
 @section('title','Services')
 @section('content')
-    <div class="breadcumb-area" style="background: url({{ asset('assets/media/breadcumb-bg.png') }});
-            background-repeat: no-repeat; background-size: cover;">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/media/breadcumb-bg.jpg') }}">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcumb-content">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li>></li>
-                            <li>Services</li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="breadcumb-content"><h1 class="breadcumb-title">Services</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li>Services</li>
+                </ul>
             </div>
         </div>
     </div>
-
-    <div class="service-area inner-style">
+    <section class="space" id="service-sec">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-title center inner-style">
-                        <h4>What We Provides?</h4>
-                        <h1>Provide Interective IT Solution</h1>
-                        <h1>Business Services</h1>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-1.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Cloud Services</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
+            <div class="row gy-4">
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">01</div>
+                        <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_1.svg') }}" alt="Icon">
+                            <span
+                                class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Web Development</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-2.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>IT Management</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-3.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Software Renew</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">02</div>
+                        <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_2.svg') }}" alt="Icon">
+                            <span
+                                class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">UI/UX Design</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-4.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Machine Learning</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-5.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Digital Marketing</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">03</div>
+                        <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_3.svg') }}" alt="Icon">
+                            <span
+                                class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Digital Marketing</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-6.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Web Development</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-7.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Cyber Security</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">04</div>
+                        <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_4.svg') }}" alt="Icon">
+                            <span
+                                class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Business Analysis</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="single-service-box">
-                        <div class="service-icon">
-                            <img src="{{ asset('assets/images/service-inner/service-icon-8.png') }}" alt="">
-                        </div>
-                        <div class="service-content">
-                            <h4>Data Analytic</h4>
-                            <p>Monotonectal grants to business visualize provid solution services business provid
-                                done</p>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="subscribe-area style-three" style="
-    background: url({{ asset('assets/media/subscribe-bg.jpg') }});
-    background-position-x: 0%;
-    background-position-y: 0%;
-    object-fit: cover;
-    background-size: auto;
-    margin-bottom: 130px;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="section-title left inner-style">
-                        <h1>Get Latest Update from Toptech</h1>
-                        <h1>Stay Connect with Us</h1>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <form action="#">
-                        <div class="single-subscribe-box">
-                            <input type="text" name="Email" placeholder="Enter your Email" required>
-                            <button type="submit">Subscribe</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="process-area style-three inner">
-        <div class="container">
-            <div class="row add-bg" style="
-                background: url({{ asset('assets/media/process-bg.jpg') }});
-                background-repeat: no-repeat;
-                background-size: cover;
-                object-fit: cover;
-                background-position: center center;">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process-box">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/images/home-3/process-1.png') }}" alt="">
-                        </div>
-                        <div class="process-content">
-                            <h4>Account Register</h4>
-                            <p>Opportunities before extensible market Dramatically pursue us</p>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">05</div>
+                        <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_5.svg') }}" alt="Icon">
+                            <span
+                                class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Software Services</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process-box">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/images/home-3/process-2.png') }}" alt="">
-                        </div>
-                        <div class="process-content">
-                            <h4>Add New Card</h4>
-                            <p>Opportunities before extensible market Dramatically pursue us</p>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">06</div>
+                        <div class="shape-icon"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_6.svg"
+                                alt="Icon">
+                            <span class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Machine Learning</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-process-box">
-                        <div class="process-icon">
-                            <img src="{{ asset('assets/images/home-3/process-3.png') }}" alt="">
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">07</div>
+                        <div class="shape-icon"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_7.svg"
+                                alt="Icon">
+                            <span class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">IT Management</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
-                        <div class="process-content">
-                            <h4>Varyfied Account</h4>
-                            <p>Opportunities before extensible market Dramatically pursue us</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">08</div>
+                        <div class="shape-icon"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_8.svg"
+                                alt="Icon">
+                            <span class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Cloud Computing</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-4">
+                    <div class="service-card">
+                        <div class="service-card_number">09</div>
+                        <div class="shape-icon"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_9.svg"
+                                alt="Icon">
+                            <span class="dots"></span></div>
+                        <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
+                        <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
+                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
+                                                                                             class="th-btn">Read More<i
+                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                        <div class="bg-shape"><img
+                                src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
+                                alt="bg">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="brand-area style-two" style="background: url({{ asset('assets/media/brand-bg.png') }});">
-        <div class="container">
-            <div class="row">
-                <div class="brand-list-1 owl-carousel">
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-1.png') }}" alt="">
-                            </div>
-                        </div>
+    </section>
+    <section class="position-relative space">
+        <div class="th-bg-img" data-bg-src="{{ asset('assets/img/bg/cta_bg_2.jpg') }}"><img
+                src="https://html.themeholy.com/webteck/demo/assets/img/bg/bg_overlay_1.png" alt="overlay"></div>
+        <div class="container z-index-common">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-7 col-md-9 text-center">
+                    <div class="title-area mb-35"><span class="sub-title"><div class="icon-masking me-2"><span
+                                    class="mask-icon"
+                                    data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img
+                                    src="assets/img/theme-img/title_shape_2.svg" alt="shape"></div>CONTACT US</span>
+                        <h2 class="sec-title text-white">Need Any Kind Of IT Solution For <span
+                                class="text-theme fw-normal">Your Business?</span></h2></div>
+                    <a href="contact.html" class="th-btn style3">Get In Touch</a></div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-smoke" id="process-sec" data-bg-src="assets/img/bg/process_bg_1.png">
+        <div class="container space">
+            <div class="title-area text-center"><span class="sub-title"><div class="icon-masking me-2"><span
+                            class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img
+                            src="assets/img/theme-img/title_shape_2.svg" alt="shape"></div>WORK PROCESS</span>
+                <h2 class="sec-title">How to work <span class="text-theme">it!</span></h2></div>
+            <div class="process-card-area">
+                <div class="process-line"><img
+                        src="https://html.themeholy.com/webteck/demo/assets/img/bg/process_line.svg"
+                        alt="line"></div>
+                <div class="row gy-40">
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">01</div>
+                            <div class="process-card_icon"><img
+                                    src="https://html.themeholy.com/webteck/demo/assets/img/icon/process_card_1.svg"
+                                    alt="icon"></div>
+                            <h2 class="box-title">Select a project</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective
+                                innovation.</p></div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-2.png') }}" alt="">
-                            </div>
-                        </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">02</div>
+                            <div class="process-card_icon"><img
+                                    src="https://html.themeholy.com/webteck/demo/assets/img/icon/process_card_2.svg"
+                                    alt="icon"></div>
+                            <h2 class="box-title">Project analysis</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective
+                                innovation.</p></div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-3.png') }}" alt="">
-                            </div>
-                        </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">03</div>
+                            <div class="process-card_icon"><img
+                                    src="https://html.themeholy.com/webteck/demo/assets/img/icon/process_card_3.svg"
+                                    alt="icon"></div>
+                            <h2 class="box-title">Plan Execute</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective
+                                innovation.</p></div>
                     </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-4.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-5.png') }}" alt="">
-                            </div>
-                        </div>
+                    <div class="col-sm-6 col-xl-3 process-card-wrap">
+                        <div class="process-card">
+                            <div class="process-card_number">04</div>
+                            <div class="process-card_icon"><img
+                                    src="https://html.themeholy.com/webteck/demo/assets/img/icon/process_card_4.svg"
+                                    alt="icon"></div>
+                            <h2 class="box-title">Deliver result</h2>
+                            <p class="process-card_text">Continua scale empowered metrics with cost effective
+                                innovation.</p></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="bg-auto space" data-bg-src="assets/img/bg/testi_bg_2.png">
+        <div class="container">
+            <div class="title-area text-center"><span class="sub-title"><div class="icon-masking me-2"><span
+                            class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img
+                            src="assets/img/theme-img/title_shape_2.svg" alt="shape"></div>CUSTOMER FEEDBACK</span>
+                <h2 class="sec-title">What Happy Clients Says<br><span class="text-theme fw-normal">About Us?</span>
+                </h2>
+            </div>
+            <div class="slider-area">
+                <div class="swiper th-slider has-shadow" id="testiSlider2"
+                     data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"1"},"992":{"slidesPerView":"1"},"1200":{"slidesPerView":"2"}}}'>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_1.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">David Farnandes</h3>
+                                    <p class="testi-box_desig">CEO at Anaton</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_2.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Jackline Techie</h3>
+                                    <p class="testi-box_desig">CEO at Kormola</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_3.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Abraham Khalil</h3>
+                                    <p class="testi-box_desig">CEO at Rimasu</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_1.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">David Farnandes</h3>
+                                    <p class="testi-box_desig">CEO at Anaton</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_2.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Jackline Techie</h3>
+                                    <p class="testi-box_desig">CEO at Kormola</p></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testi-box">
+                                <div class="testi-box_img"><img
+                                        src="https://html.themeholy.com/webteck/demo/assets/img/testimonial/testi_2_3.jpg"
+                                        alt="Avater">
+                                    <div class="testi-box_quote"><img
+                                            src="https://html.themeholy.com/webteck/demo/assets/img/icon/quote_left_2.svg"
+                                            alt="quote"></div>
+                                </div>
+                                <div class="testi-box_content"><p class="testi-box_text">Objectively visualize
+                                        error-free
+                                        technology for B2B alignment. Monotonectally harness an expanded array of models
+                                        via
+                                        effective collaboration.</p>
+                                    <div class="testi-box_review"><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i><i
+                                            class="fa-solid fa-star-sharp"></i><i class="fa-solid fa-star-sharp"></i>
+                                    </div>
+                                    <h3 class="box-title">Abraham Khalil</h3>
+                                    <p class="testi-box_desig">CEO at Rimasu</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i
+                        class="far fa-arrow-left"></i></button>
+                <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i
+                        class="far fa-arrow-right"></i></button>
+            </div>
+        </div>
+        <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img
+                src="https://html.themeholy.com/webteck/demo/assets/img/shape/line_1.png" alt="shape"></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-top="20%" data-right="2%"><img
+                src="https://html.themeholy.com/webteck/demo/assets/img/shape/line_2.png" alt="shape"></div>
+    </section>
 @endsection
