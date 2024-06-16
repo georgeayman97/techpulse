@@ -1,7 +1,7 @@
 @use "sass:math"; :root {
-                      --theme-color: #684DF4;
+                      --theme-color: #5E6DDB;
                       --theme-color2: #684DF4;
-                      --title-color: #141D38;
+                      --title-color: #232533;
                       --body-color: #737887;
                       --smoke-color: #F5F5F5;
                       --smoke-color2: #E2E8FA;
@@ -2483,10 +2483,14 @@ textarea.is-invalid {
     transform: translateY(0)
 }
 
+.consultation-title-color {
+    color: var(--white-color);
+}
+
 .sec-title {
     margin-bottom: calc(var(--section-title-space) - 10px);
     margin-top: -0.32em;
-    text-transform: capitalize
+    text-transform: capitalize;
 }
 
 .sec-title.sec-title2 span {
@@ -19297,7 +19301,7 @@ span.select2-selection.select2-selection--single:focus {
     background-color: var(--white-color);
     box-shadow: 0px 6px 15px rgba(8, 14, 28, 0.06);
     border-radius: 10px;
-    padding: 120px 40px 40px 40px;
+    padding: 40px 40px 40px 40px;
     margin-top: 50px
 }
 

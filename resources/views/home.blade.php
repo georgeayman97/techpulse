@@ -388,13 +388,10 @@
                                                                 data-mask-src="{{ asset('assets/img/theme-img/title_shape_1.svg') }}"></span> <img
                                     src="https://html.themeholy.com/webteck/demo/assets/img/theme-img/title_shape_1.svg"
                                     alt="shape"></div>LATEST PROJECT</span>
-                        <h2 class="sec-title">See We Have Solution<br>Done <span class="text-theme">IT Projects</span>
+                        <h2 class="sec-title">See We Have Solution<br>Done <span
+                                class="text-theme">Software Projects</span>
                         </h2>
                     </div>
-                </div>
-                <div class="col-auto">
-                    <div class="sec-btn"><a href="project.html" class="th-btn">VIEW ALL PORJECTS<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a></div>
                 </div>
             </div>
             <div class="slider-area">
@@ -543,6 +540,8 @@
                 <button data-slider-next="#projectSlider1" class="slider-arrow style3 slider-next"><i
                         class="far fa-arrow-right"></i></button>
             </div>
+            <div class="text-center mt-5"><a href="{{ route('projects') }}" class="th-btn">VIEW ALL PROJECTS<i
+                        class="fa-regular fa-arrow-right ms-2"></i></a></div>
         </div>
         <div class="shape-mockup" data-top="0%" data-right="0%"><img
                 src="https://html.themeholy.com/webteck/demo/assets/img/shape/tech_shape_1.png" alt="shape"></div>
@@ -561,7 +560,7 @@
                                                                 data-mask-src="{{ asset('assets/img/theme-img/title_shape_1.svg') }}"></span> <img
                                     src="https://html.themeholy.com/webteck/demo/assets/img/theme-img/title_shape_1.svg"
                                     alt="shape"></div>APPOINTMENT NOW</span>
-                        <h2 class="sec-title">We're Ready to Talk About Your <span
+                        <h2 class="sec-title consultation-title-color">We're Ready to Talk About Your <span
                                 class="text-theme">Opportunities</span>
                         </h2></div>
                     <p class="mt-n2 mb-30 text-xl-start text-center">Progressively morph principle-centered e-markets
@@ -583,7 +582,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-6 ps-xl-4"><h3 class="h4 mt-n2 mb-30 text-center">Make An Appointment</h3>
+                <div class="col-xl-6 ps-xl-4">
+                    <h3 class="h4 mt-n2 mb-30 text-center consultation-title-color">Make An Appointment</h3>
                     <form action="https://html.themeholy.com/webteck/demo/mail.php" method="POST"
                           class="appoitment-form ajax-contact">
                         <div class="row">
