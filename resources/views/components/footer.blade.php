@@ -4,9 +4,9 @@
             <div class="row justify-content-between">
                 <div class="col-md-6 col-xxl-3 col-xl-4">
                     <div class="footer-logo"><a class="icon-masking" href="index.html"><span
-                                data-mask-src="{{ asset('assets/img/logo-white.svg') }}"
+                                data-mask-src="{{ asset('assets/media/footer 2@2x.png') }}"
                                 class="mask-icon"></span><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/logo-white.svg"
+                                src="{{ asset('assets/media/footer 2@2x.png') }}"
                                 alt="Webteck"></a>
                     </div>
                     <div class="widget footer-widget"><h3 class="widget_title">About Company</h3>

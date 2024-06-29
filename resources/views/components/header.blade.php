@@ -1,10 +1,11 @@
 <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
         <button class="th-menu-toggle"><i class="fal fa-times"></i></button>
-        <div class="mobile-logo"><a class="icon-masking" href="index.html"><span
-                    data-mask-src="{{ asset('assets/img/logo.svg') }}"
-                    class="mask-icon"></span><img
-                    src="{{ asset('assets/img/logo.svg') }}" alt="Webteck"></a></div>
+        <div class="mobile-logo"><a class="icon-masking" href="{{ route('home') }}">
+                <img class="logo-techpulse"
+                     src="{{ asset('assets/media/header no fill@2x.png') }}"
+                     alt="TechPulse Solutions"></a>
+        </div>
         <div class="th-mobile-menu">
             <ul>
                 <li><a href="{{ route('home') }}">@lang('lang.Home')</a></li>
@@ -29,9 +30,10 @@
             <div class="container">
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
-                        <div class="header-logo"><a class="icon-masking" href="index.html"><span
-                                    data-mask-src="{{ asset('assets/img/logo.svg') }}" class="mask-icon"></span><img
-                                    src="{{ asset('assets/img/logo.svg') }}" alt="Webteck"></a></div>
+                        <div class="header-logo"><a class="icon-masking" href="{{ route('home') }}">
+                                <img class="logo-techpulse"
+                                     src="{{ asset('assets/media/header no fill@2x.png') }}"
+                                     alt="TechPulse Solutions"></a></div>
                     </div>
                     <div class="col-auto">
                         <nav class="main-menu d-none d-lg-inline-block">
