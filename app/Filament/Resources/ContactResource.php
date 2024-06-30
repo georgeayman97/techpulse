@@ -31,15 +31,16 @@ class ContactResource extends Resource
                 Forms\Components\TextInput::make('phone')
                     ->required()
                     ->maxLength(255),
-                Forms\Components\TextInput::make('subject')
-                    ->required()
+                Forms\Components\TextInput::make('country')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('company_name')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('company_field')
                     ->maxLength(255),
-                Forms\Components\TextInput::make('country')
-                    ->maxLength(255),
+                Forms\Components\TextInput::make('subject')
+                    ->required()
+                    ->maxLength(255)
+                    ->columnSpanFull(),
                 Forms\Components\Textarea::make('message')
                     ->required()
                     ->columnSpanFull(),

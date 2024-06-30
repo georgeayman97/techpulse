@@ -2,182 +2,129 @@
 @section('title','Contact Us')
 @section('content')
 
-    <div class="breadcumb-area" style="background: url({{ asset('assets/media/breadcumb-bg.png') }});
-            background-repeat: no-repeat; background-size: cover;">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/media/breadcumb-bg.jpg') }}">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcumb-content">
-                        <h4>Contact Us</h4>
-                        <ul>
-                            <li><a href="{{ route('home') }}">Home</a></li>
-                            <li>></li>
-                            <li>Contact Us</li>
-                        </ul>
+            <div class="breadcumb-content"><h1 class="breadcumb-title">Contact Us</h1>
+                <ul class="breadcumb-menu">
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="space">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class="fas fa-location-dot"></i></div>
+                        <div class="media-body"><h4 class="box-title">Our Office Address</h4><span
+                                class="contact-info_text">Burnsville, MN 55337 Streat,<br>United States</span></div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class="fas fa-phone"></i></div>
+                        <div class="media-body"><h4 class="box-title">Call Us Anytime</h4><span
+                                class="contact-info_text"><a
+                                    href="tel:+65485965789">(+65) - 48596 - 5789</a> <a
+                                    href="tel:+65485965789">+65-48596-5789</a></span></div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="contact-info">
+                        <div class="contact-info_icon"><i class="fas fa-envelope"></i></div>
+                        <div class="media-body"><h4 class="box-title">Send An Email</h4><span class="contact-info_text"><a
+                                    href="mailto:info.example@gmail.com">info.example@gmail.com</a> <a
+                                    href="mailto:info@webteck.com">info@webteck.com</a></span></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="contact-area style-three inner">
+    <div class="bg-smoke space" data-bg-src="{{ asset('assets/media/contact_bg_1.png') }}" id="contact-sec">
         <div class="container">
-            <div class="row add-white-bg align-items-center">
-                <div class="col-lg-8 col-md-12">
-                    <div class="single-contact-box">
-                        <div class="contact-contetn">
-                            <h4>Write to Us Anytime</h4>
-                        </div>
-                        <form action="{{ route('contact-us.store') }}" method="POST">
-                            @csrf
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="name" placeholder="Your Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="email" placeholder="Enter E-Mail" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="phone" placeholder="Phone Number" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="company_name" placeholder="Company Name">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="company_field" placeholder="Company Field">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="single-input-box">
-                                        <input type="text" name="country" placeholder="Country" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single-input-box">
-                                        <input type="text" name="subject" placeholder="Subject" required>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single-input-box">
-                                        <textarea name="message" id="massage" placeholder="Write Massage"
-                                                  required></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="massage-sent-button">
-                                        <button type="submit">Send Massage</button>
-                                    </div>
-                                </div>
+            <div class="row">
+                <div class="col-xl-8">
+                    <div class="title-area mb-35 text-xl-start text-center">
+                        <span class="sub-title">
+                            <div class="icon-masking me-2">
+                                <span class="mask-icon"
+                                      data-mask-src="{{ asset('assets/img/theme-img/title_shape_2.svg') }}"></span>
+                                <img src="{{ asset('assets/img/theme-img/title_shape_2.svg') }}" alt="shape">
                             </div>
-                        </form>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-12">
-                    <div class="single-contact-info-box" style="
-                                background: url({{ asset('assets/media/contact-info-box-bg.png') }});
-                                background-position-x: 0%;
-                                background-position-y: 0%;
-                                background-repeat: no-repeat;
-                                background-size: auto;">
-                        <div class="info-content">
-                            <h4>Don’t Forget to Contact Us</h4>
-                        </div>
-                        <div class="contact-info-box">
-                            <div class="contact-info-icon">
-                                <i class="bi bi-telephone-fill"></i>
+                            contact with us!
+                        </span>
+                        <h2 class="sec-title">Have Any Questions?</h2>
+                        <p class="sec-text">Enthusiastically disintermediate one-to-one leadership via business
+                            e-commerce.
+                            Dramatically reintermediate compelling process improvements rather than empowered
+                            relationships.</p></div>
+                    <form action="{{ route('contact-us.store') }}" method="POST" class="contact-form ajax-contact">
+                        @csrf
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" name="name"
+                                       id="name"
+                                       placeholder="Your Name" required>
+                                <i class="fal fa-user"></i>
                             </div>
-                            <div class="contact-info-content">
-                                <p>Call Us</p>
-                                <h4>+980 123 (4567) 890</h4>
+                            <div class="form-group col-md-4">
+                                <input type="email" class="form-control" name="email"
+                                       id="email" placeholder="Email Address" required>
+                                <i class="fal fa-envelope"></i>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="tel" class="form-control" name="number"
+                                       id="number" placeholder="Phone Number" required>
+                                <i class="fal fa-phone"></i>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" name="company_name"
+                                       id="company_name"
+                                       placeholder="Company Name">
+                                <i class="fal fa-building"></i>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" name="company_field"
+                                       id="company_field"
+                                       placeholder="Company Field">
+                                <i class="fal fa-building"></i>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <input type="text" class="form-control" name="country"
+                                       id="country"
+                                       placeholder="Country" required>
+                                <i class="fal fa-globe"></i>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <input type="text" class="form-control" name="subject"
+                                       id="subject"
+                                       placeholder="Subject" required>
+                                <i class="fal fa-envelope-open"></i>
+                            </div>
+                            <div class="form-group col-12">
+                                <textarea name="message" id="message" cols="30" rows="3"
+                                          class="form-control"
+                                          placeholder="Your Message"></textarea>
+                                <i class="fal fa-comment"></i>
+                            </div>
+                            <div class="form-btn text-xl-start text-center col-12">
+                                <button class="th-btn">Send Message<i class="fa-regular fa-arrow-right ms-2"></i>
+                                </button>
                             </div>
                         </div>
-                        <div class="contact-info-box">
-                            <div class="contact-info-icon">
-                                <i class="bi bi-envelope-open-fill"></i>
-                            </div>
-                            <div class="contact-info-content">
-                                <p>Send E-Mail</p>
-                                <h4>example@gmail.com</h4>
-                            </div>
-                        </div>
-                        <div class="contact-info-box">
-                            <div class="contact-info-icon">
-                                <i class="bi bi-alarm"></i>
-                            </div>
-                            <div class="contact-info-content">
-                                <p>Office Hours</p>
-                                <h4>8.00 AM to 5.00 PM</h4>
-                            </div>
-                        </div>
-                    </div>
+                        <p class="form-messages mb-0 mt-3"></p>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="google-map">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.325396876019!2d90.36098897592879!3d23.80702538659894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c105f81691d5%3A0x4aa9bd97de918f7b!2sSher-E-Bangla%20National%20Cricket%20Stadium!5e0!3m2!1sen!2sbd!4v1715077171980!5m2!1sen!2sbd"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="brand-area style-two" style="background: url({{ asset('assets/media/brand-bg.jpg') }});">
-        <div class="container">
-            <div class="row">
-                <div class="brand-list-1 owl-carousel">
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-1.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-2.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-3.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-4.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-12">
-                        <div class="single-brand-box">
-                            <div class="brand-thumb">
-                                <img src="{{ asset('assets/images/home-2/brand-5.png') }}" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="map-sec">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.7310056272386!2d89.2286059153658!3d24.00527418490799!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fe9b97badc6151%3A0x30b048c9fb2129bc!2sThemeholy!5e0!3m2!1sen!2sbd!4v1651028958211!5m2!1sen!2sbd"
+            allowfullscreen="" loading="lazy"></iframe>
     </div>
 
 @endsection

@@ -362,16 +362,16 @@
                     <div class="two-column">
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> Quick Efficient Delivery</li>
-                                <li><i class="far fa-check"></i> 24/7 Online Support</li>
-                                <li><i class="far fa-check"></i> Business Improvement</li>
+                                <li><i class="fal fa-check"></i> Quick Efficient Delivery</li>
+                                <li><i class="fal fa-check"></i> 24/7 Online Support</li>
+                                <li><i class="fal fa-check"></i> Business Improvement</li>
                             </ul>
                         </div>
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> High Quality Security</li>
-                                <li><i class="far fa-check"></i> 24/7 Support Team</li>
-                                <li><i class="far fa-check"></i> Easy Solutions</li>
+                                <li><i class="fal fa-check"></i> High Quality Security</li>
+                                <li><i class="fal fa-check"></i> 24/7 Support Team</li>
+                                <li><i class="fal fa-check"></i> Easy Solutions</li>
                             </ul>
                         </div>
                     </div>
@@ -379,6 +379,7 @@
             </div>
         </div>
     </div>
+
     <section class="space" id="project-sec">
         <div class="container">
             <div class="row justify-content-lg-between justify-content-center align-items-center">
@@ -398,147 +399,33 @@
                 <div class="swiper th-slider has-shadow" id="projectSlider1"
                      data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"2"},"1200":{"slidesPerView":"3"}}}'>
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_1.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p1"></div>
-                                        <h3 class="box-title"><a href="project-details.html">IT Consultency</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_1.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
+                        @foreach($categories as $category)
+                            @foreach($category->deployedProjects as $project)
+                                <div class="swiper-slide">
+                                    <div class="project-card">
+                                        <div class="project-img"><img
+                                                src="{{ $project->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_HOME_IMAGE->value) }}"
+                                                alt="project image"></div>
+                                        <div class="project-content-wrap">
+                                            <div class="project-content">
+                                                <div class="box-particle" id="project-p1"></div>
+                                                <h3 class="box-title"><a
+                                                        href="project-details.html">{{ getColumn($project,'title') }}</a>
+                                                </h3>
+                                                <p class="project-subtitle">{{ getColumn($category,'name') }}</p><a
+                                                    href="{{ $project->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_HOME_IMAGE->value) }}"
+                                                    class="icon-btn popup-image"><i class="fal fa-plus"></i></a></div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_2.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p2"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Web Development</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_2.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_3.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p3"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Website Design</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_3.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_4.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p4"></div>
-                                        <h3 class="box-title"><a href="project-details.html">SEO Optimization</a></h3>
-                                        <p class="project-subtitle">Marketing</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_4.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_5.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p5"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Digital Marketing</a></h3>
-                                        <p class="project-subtitle">Marketing</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_5.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_6.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p6"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Business Analysis</a></h3>
-                                        <p class="project-subtitle">Business</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_6.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_7.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p7"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Software Service</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_7.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_8.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p8"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Data Recovery</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_8.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="project-card">
-                                <div class="project-img"><img
-                                        src="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_9.jpg"
-                                        alt="project image"></div>
-                                <div class="project-content-wrap">
-                                    <div class="project-content">
-                                        <div class="box-particle" id="project-p9"></div>
-                                        <h3 class="box-title"><a href="project-details.html">Cloud Computing</a></h3>
-                                        <p class="project-subtitle">Technology</p><a
-                                            href="https://html.themeholy.com/webteck/demo/assets/img/project/project_1_9.jpg"
-                                            class="icon-btn popup-image"><i class="far fa-plus"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
+                            @endforeach
+                        @endforeach
                     </div>
                 </div>
                 <button data-slider-prev="#projectSlider1" class="slider-arrow style3 slider-prev"><i
-                        class="far fa-arrow-left"></i></button>
+                        class="fal fa-arrow-left"></i></button>
                 <button data-slider-next="#projectSlider1" class="slider-arrow style3 slider-next"><i
-                        class="far fa-arrow-right"></i></button>
+                        class="fal fa-arrow-right"></i></button>
             </div>
             <div class="text-center mt-5"><a href="{{ route('projects') }}" class="th-btn">VIEW ALL PROJECTS<i
                         class="fa-regular fa-arrow-right ms-2"></i></a></div>
@@ -572,20 +459,21 @@
                         <div class="contact-feature">
                             <div class="icon-btn"><i class="fa-solid fa-phone"></i></div>
                             <div class="media-body"><p class="contact-feature_label">Call Us On:</p><a
-                                    href="tel:+19088000393" class="contact-feature_link">+190-8800-0393</a></div>
+                                    href="tel:+971582374123" class="contact-feature_link">+971 582374123</a></div>
                         </div>
                         <div class="contact-feature">
                             <div class="icon-btn"><i class="fa-solid fa-envelope"></i></div>
                             <div class="media-body"><p class="contact-feature_label">Quick Mail Us:</p><a
-                                    href="mailto:info@webteck.com" class="contact-feature_link">info@webteck.com</a>
+                                    href="mailto:sales@techpulse-solutions.com" class="contact-feature_link">sales@techpulse-solutions.com</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-6 ps-xl-4">
                     <h3 class="h4 mt-n2 mb-30 text-center consultation-title-color">Make An Appointment</h3>
-                    <form action="https://html.themeholy.com/webteck/demo/mail.php" method="POST"
+                    <form action="{{ route('contact-us.store') }}" method="POST"
                           class="appoitment-form ajax-contact">
+                        @csrf
                         <div class="row">
                             <div class="form-group col-sm-6"><input type="text" class="form-control" name="name"
                                                                     id="name"

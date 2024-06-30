@@ -23,6 +23,7 @@ class StoreContactRequest extends FormRequest
     public function rules(): array
     {
         return [
+            '_token' => ['required'],
             'name' => ["required"],
             'subject' => ["required"],
             'message' => ["required"],

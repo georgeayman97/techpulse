@@ -175,7 +175,7 @@
         </div>
     </section>
     <section class="position-relative space">
-        <div class="th-bg-img" data-bg-src="{{ asset('assets/img/bg/cta_bg_2.jpg') }}"><img
+        <div class="th-bg-img" data-bg-src="{{ asset('assets/media/cta_bg_3.jpg') }}"><img
                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/bg_overlay_1.png" alt="overlay"></div>
         <div class="container z-index-common">
             <div class="row justify-content-center">

@@ -2,14 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Enum\ResponseMessage;
 use App\Http\Requests\StoreContactRequest;
 use App\Services\StoreContactService;
 use Exception;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
-use Illuminate\Http\RedirectResponse;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\DB;
 
 class ContactController extends Controller
@@ -19,8 +18,7 @@ class ContactController extends Controller
      */
     public function __construct(
         private readonly StoreContactService $contactService,
-    )
-    {
+    ) {
     }
 
     /**
@@ -33,15 +31,16 @@ class ContactController extends Controller
 
     /**
      * @param StoreContactRequest $request
-     * @return RedirectResponse
+     * @return JsonResponse
      * @throws Exception
      */
-    public function store(StoreContactRequest $request): RedirectResponse
+    public function store(StoreContactRequest $request): JsonResponse
     {
         try {
             DB::beginTransaction();
             $this->contactService->setData(
                 $request->only(
+                    '_token',
                     'name',
                     'email',
                     'phone',
@@ -53,10 +52,10 @@ class ContactController extends Controller
                 )
             )->execute();
             DB::commit();
-            return redirect()->route('home');
+            return response()->json(__("lang.Thank you for contacting us"));
         } catch (Exception $exception) {
             DB::rollBack();
-            throw new Exception(ResponseMessage::SOMETHING_WENT_WRONG->getMessage());
+            return response()->json(__("lang.Something went wrong try refresh the page"));
         }
     }
 }
