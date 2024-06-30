@@ -190,7 +190,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-smoke" id="process-sec" data-bg-src="assets/img/bg/process_bg_1.png">
+    <section class="bg-smoke" id="process-sec" data-bg-src="{{ asset('assets/media/process_bg_1.png') }}">
         <div class="container space">
             <div class="title-area text-center"><span class="sub-title"><div class="icon-masking me-2"><span
                             class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img
@@ -245,11 +245,12 @@
             </div>
         </div>
     </section>
-    <section class="bg-auto space" data-bg-src="assets/img/bg/testi_bg_2.png">
+    <section class="bg-auto space" data-bg-src="{{ asset('assets/media/testi_bg_2.png') }}">
         <div class="container">
             <div class="title-area text-center"><span class="sub-title"><div class="icon-masking me-2"><span
-                            class="mask-icon" data-mask-src="assets/img/theme-img/title_shape_2.svg"></span> <img
-                            src="assets/img/theme-img/title_shape_2.svg" alt="shape"></div>CUSTOMER FEEDBACK</span>
+                            class="mask-icon"
+                            data-mask-src="{{ asset('assets/img/theme-img/title_shape_2.svg') }}"></span> <img
+                            src="{{ asset('assets/img/theme-img/title_shape_2.svg') }}" alt="shape"></div>CUSTOMER FEEDBACK</span>
                 <h2 class="sec-title">What Happy Clients Says<br><span class="text-theme fw-normal">About Us?</span>
                 </h2>
             </div>
@@ -392,9 +393,9 @@
                     </div>
                 </div>
                 <button data-slider-prev="#testiSlider2" class="slider-arrow style3 slider-prev"><i
-                        class="far fa-arrow-left"></i></button>
+                        class="fal fa-arrow-left"></i></button>
                 <button data-slider-next="#testiSlider2" class="slider-arrow style3 slider-next"><i
-                        class="far fa-arrow-right"></i></button>
+                        class="fal fa-arrow-right"></i></button>
             </div>
         </div>
         <div class="shape-mockup moving d-none d-xl-block" data-bottom="0%" data-left="10%"><img

@@ -330,7 +330,7 @@
                         we don't just build models we create game-changers that fit perfectly into your strategy.
 
                         Ready to see how we can dramatically boost your business? Let's dive in</p><a
-                        href="about.html"
+                        href="{{ route('about-us') }}"
                         class="th-btn style3">DISCOVER
                         MORE TOGETHER<i class="fa-regular fa-arrow-right ms-2"></i></a></div>
             </div>
@@ -410,7 +410,7 @@
                                             <div class="project-content">
                                                 <div class="box-particle" id="project-p1"></div>
                                                 <h3 class="box-title"><a
-                                                        href="project-details.html">{{ getColumn($project,'title') }}</a>
+                                                        href="{{ route('projects.show',$project->slug) }}">{{ getColumn($project,'title') }}</a>
                                                 </h3>
                                                 <p class="project-subtitle">{{ getColumn($category,'name') }}</p><a
                                                     href="{{ $project->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_HOME_IMAGE->value) }}"

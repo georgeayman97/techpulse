@@ -1,69 +1,97 @@
 @extends('layouts.master')
 @section('content')
-    <div id="banner-area">
-        <img src="{{ asset('assets2/images/banner/banner2.jpg') }}" alt=""/>
-        <div class="parallax-overlay"></div>
-        <!-- Subpage title start -->
-        <div class="banner-title-content">
-            <div class="text-center">
-                <h2>Portfolio Single</h2>
-                <ul class="breadcrumb">
+    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/media/breadcumb-bg.jpg') }}">
+        <div class="container">
+            <div class="breadcumb-content"><h1 class="breadcumb-title">Project Details</h1>
+                <ul class="breadcumb-menu">
                     <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('projects') }}">Portfolio</a></li>
-                    <li>{{ $project->title_en }}</li>
+                    <li><a href="{{ route('projects') }}">Projects</a></li>
+                    <li>Project Details</li>
                 </ul>
             </div>
-        </div><!-- Subpage title end -->
-    </div><!-- Banner area end -->
-
-
-    <!-- Portfolio item start -->
-    <section id="portfolio-item">
+        </div>
+    </div>
+    
+    <section class="space-top space-extra-bottom">
         <div class="container">
-            <!-- Portfolio item row start -->
             <div class="row">
-                <!-- Portfolio item slider start -->
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <div class="portfolio-slider">
-                        <div class="flexportfolio flexslider">
-                            <ul class="slides">
-                                @foreach($project?->getMedia(MediaCollection::PROJECT_IMAGES->value) as $media)
-                                    <li><img src="{{ asset($media->getUrl()) }}" alt=""></li>
-                                @endforeach
-                            </ul>
+                <div class="col-xxl-8 col-lg-8">
+                    <div class="page-single">
+                        <div class="page-img"><img
+                                src="{{ $project?->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_HOME_IMAGE->value) }}"
+                                alt="Project Image"></div>
+                        <div class="page-content"><h2 class="h3 page-title">{{ getColumn($project,'title') }}</h2>
+                            <p>{{ getColumn($project,'sub_title') }}</p>
+                            <div class="project-inner-box mb-40"><h3 class="box-title">The result of project</h3>
+                                <p>{!! getColumn($project,'description') !!}</p>
+                                <div class="row gy-4 align-items-center">
+                                    <div class="col-md-5">
+                                        <img class="w-100 rounded-3"
+                                             src="{{ $project?->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_IMAGES->value) }}"
+                                             alt="project"></div>
+                                    <div class="col-md-7">
+                                        <div class="checklist">
+                                            <ul>
+                                                @foreach($project->tags as $tag)
+                                                    <li>
+                                                        <i class="fal fa-badge-check"></i> {{ $tag->name }}
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Portfolio item slider end -->
-
-                <!-- sidebar start -->
-                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <div class="sidebar">
-                        <div class="portfolio-desc">
-                            <h3 class="widget-title">About Project</h3>
-                            <p>
-                                {!! $project->description_en !!}
-                            </p>
-                            <br/>
-                            <h3 class="widget-title">Used Skills</h3>
-                            <p>
-                                @foreach($project->tags as $key => $tag)
-                                    {{$tag->name .(($key != 0) || ($key+1 != $project->tags->count()) ?
-                                     ($key+1 !=$project->tags->count()-1? ',':'&'):'')}}
-                                @endforeach
-                            </p>
-                            <br/>
-                            <h3 class="widget-title">Clients</h3>
-                            <p>{{ $project?->client?->name }}</p>
-                            {{--                            <p><a href="#" class="project-btn btn btn-primary">Project Link</a></p>--}}
+                <div class="col-xxl-4 col-lg-4">
+                    <aside class="sidebar-area">
+                        <div class="widget widget_info"><h3 class="widget_title">Project Information</h3>
+                            <div class="project-info-list">
+                                <div class="contact-feature">
+                                    <div class="icon-btn"><i class="fa-solid fa-user"></i></div>
+                                    <div class="media-body"><p class="contact-feature_label">Client:</p>
+                                        <a class="contact-feature_link">
+                                            {{ $project?->client?->first_name . " " .$project?->client?->last_name }}
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn"><i class="fa-solid fa-folder-open"></i></div>
+                                    <div class="media-body"><p class="contact-feature_label">Category:</p>
+                                        <a class="contact-feature_link">{{ getColumn($project?->category,'name') }}</a>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn"><i class="fa-solid fa-calendar-days"></i></div>
+                                    <div class="media-body"><p class="contact-feature_label">Date</p><span
+                                            class="contact-feature_link">{{ \Carbon\Carbon::parse($project?->delivery_date)->format('M, Y') }}</span>
+                                    </div>
+                                </div>
+                                <div class="contact-feature">
+                                    <div class="icon-btn"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="media-body"><p class="contact-feature_label">Country:</p>
+                                        <a class="contact-feature_link">{{ $project?->client?->country?->name }}</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        {{--                        <div class="widget widget_download"><h4 class="widget_title">Download Brochure</h4>--}}
+                        {{--                            <div class="download-widget-wrap"><a href="service-details.html" class="th-btn"><i--}}
+                        {{--                                        class="fa-light fa-file-pdf me-2"></i>DOWNLOAD PDF</a>--}}
+                        {{--                            </div>--}}
+                        {{--                        </div>--}}
+                        <div class="widget widget_banner" data-bg-src="{{ asset('assets/media/widget_banner-1.jpg') }}">
+                            <div class="widget-banner"><span class="text">CONTACT US NOW</span>
+                                <h2 class="title">You Need Help?</h2><a href="{{ route('contact-us.create') }}"
+                                                                        class="th-btn style3">GET A
+                                    QUOTE<i class="fas fa-arrow-right ms-2"></i></a></div>
+                        </div>
+                    </aside>
                 </div>
-                <!-- sidebar end -->
-            </div><!-- Portfolio item row end -->
-        </div><!-- Container end -->
-    </section><!-- Portfolio item end -->
-
-    <div class="gap-40"></div>
+            </div>
+        </div>
+    </section>
 
 @endsection
