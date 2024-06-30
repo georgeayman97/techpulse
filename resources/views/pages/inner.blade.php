@@ -1,6 +1,7 @@
 @extends('layouts.master')
 @section('content')
-    <div class="breadcumb-wrapper" data-bg-src="{{ asset('assets/media/breadcumb-bg.jpg') }}">
+    <div class="breadcumb-wrapper"
+         data-bg-src="@foreach($project?->getMedia(\App\Enum\MediaCollection::PROJECT_IMAGES->value)?->take(1) as $media) {{ $media->getUrl() }} @endforeach">
         <div class="container">
             <div class="breadcumb-content"><h1 class="breadcumb-title">Project Details</h1>
                 <ul class="breadcumb-menu">
@@ -11,14 +12,13 @@
             </div>
         </div>
     </div>
-    
     <section class="space-top space-extra-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-xxl-8 col-lg-8">
                     <div class="page-single">
                         <div class="page-img"><img
-                                src="{{ $project?->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_HOME_IMAGE->value) }}"
+                                src="@foreach($project?->getMedia(\App\Enum\MediaCollection::PROJECT_IMAGES->value)?->skip(1)?->take(1) as $media) {{ $media->getUrl() }} @endforeach"
                                 alt="Project Image"></div>
                         <div class="page-content"><h2 class="h3 page-title">{{ getColumn($project,'title') }}</h2>
                             <p>{{ getColumn($project,'sub_title') }}</p>
@@ -27,7 +27,7 @@
                                 <div class="row gy-4 align-items-center">
                                     <div class="col-md-5">
                                         <img class="w-100 rounded-3"
-                                             src="{{ $project?->getFirstMediaUrl(\App\Enum\MediaCollection::PROJECT_IMAGES->value) }}"
+                                             src="@foreach($project?->getMedia(\App\Enum\MediaCollection::PROJECT_IMAGES->value)?->skip(2)?->take(1) as $media) {{ $media->getUrl() }} @endforeach"
                                              alt="project"></div>
                                     <div class="col-md-7">
                                         <div class="checklist">
