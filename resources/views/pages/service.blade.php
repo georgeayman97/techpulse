@@ -5,7 +5,7 @@
         <div class="container">
             <div class="breadcumb-content"><h1 class="breadcumb-title">Services</h1>
                 <ul class="breadcumb-menu">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="{{ route('home') }}">Home</a></li>
                     <li>Services</li>
                 </ul>
             </div>
@@ -20,11 +20,9 @@
                         <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_1.svg') }}" alt="Icon">
                             <span
                                 class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Web Development</a></h3>
+                        <h3 class="box-title"><a href="">Web Development</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -37,11 +35,9 @@
                         <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_2.svg') }}" alt="Icon">
                             <span
                                 class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">UI/UX Design</a></h3>
+                        <h3 class="box-title"><a href="">UI/UX Design</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -54,11 +50,9 @@
                         <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_3.svg') }}" alt="Icon">
                             <span
                                 class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Digital Marketing</a></h3>
+                        <h3 class="box-title"><a href="">Digital Marketing</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -71,11 +65,9 @@
                         <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_4.svg') }}" alt="Icon">
                             <span
                                 class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Business Analysis</a></h3>
+                        <h3 class="box-title"><a href="">Business Analysis</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -88,11 +80,9 @@
                         <div class="shape-icon"><img src="{{ asset('assets/img/icon/service_card_5.svg') }}" alt="Icon">
                             <span
                                 class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Software Services</a></h3>
+                        <h3 class="box-title"><a href="">Software Services</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -106,11 +96,9 @@
                                 src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_6.svg"
                                 alt="Icon">
                             <span class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Machine Learning</a></h3>
+                        <h3 class="box-title"><a href="">Machine Learning</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -124,11 +112,9 @@
                                 src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_7.svg"
                                 alt="Icon">
                             <span class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">IT Management</a></h3>
+                        <h3 class="box-title"><a href="">IT Management</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -142,11 +128,9 @@
                                 src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_8.svg"
                                 alt="Icon">
                             <span class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Cloud Computing</a></h3>
+                        <h3 class="box-title"><a href="">Cloud Computing</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
@@ -160,11 +144,9 @@
                                 src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_card_9.svg"
                                 alt="Icon">
                             <span class="dots"></span></div>
-                        <h3 class="box-title"><a href="service-details.html">Backup & Recovery</a></h3>
+                        <h3 class="box-title"><a href="">Backup & Recovery</a></h3>
                         <p class="service-card_text">Intrinsicly redefine competitive e-business before adaptive
-                            potentialiti. Professionally build progressive users with.</p><a href="service-details.html"
-                                                                                             class="th-btn">Read More<i
-                                class="fa-regular fa-arrow-right ms-2"></i></a>
+                            potentialiti. Professionally build progressive users with.</p>
                         <div class="bg-shape"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/bg/service_card_bg.png"
                                 alt="bg">
