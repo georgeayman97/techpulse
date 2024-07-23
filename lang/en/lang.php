@@ -11,5 +11,6 @@ return [
     'SPANISH' => 'SPANISH',
     'Thank you for contacting us' => 'Thank you for contacting us',
     'Something went wrong try refresh the page' => 'Something went wrong try refresh the page',
+    'Contact' => 'Contact',
     'abc' => 'abc',
 ];

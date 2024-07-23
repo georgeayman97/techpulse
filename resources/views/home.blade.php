@@ -3,7 +3,8 @@
 @section('content')
     <div class="th-hero-wrapper hero-4" id="hero">
         <div class="body-particle" id="body-particle"></div>
-        <div class="hero-img tilt-active"><img src="assets/img/hero/hero_img_4_1.png" alt="Hero Image"></div>
+        <div class="hero-img tilt-active"><img src="{{ asset('assets/img/hero/hero_img_4_1.png') }}" alt="Hero Image">
+        </div>
         <div class="container">
             <div class="hero-style4">
                 <div class="ripple-shape"><span class="ripple-1"></span><span class="ripple-2"></span><span
@@ -178,9 +179,9 @@
                         <div class="img1"><img
                                 src="https://html.themeholy.com/webteck/demo/assets/img/normal/about_1_1.png"
                                 alt="About"></div>
-                        <div class="shape1"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/normal/about_shape_1.png"
-                                alt="shape"></div>
+                        {{--                        <div class="shape1">--}}
+                        {{--                            <img src="https://html.themeholy.com/webteck/demo/assets/img/normal/about_shape_1.png" alt="shape">--}}
+                        {{--                        </div>--}}
                     </div>
                 </div>
                 <div class="col-xl-6">
