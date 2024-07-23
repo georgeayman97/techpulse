@@ -3,12 +3,13 @@
     <div class="breadcumb-wrapper"
          data-bg-src="@foreach($project?->getMedia(\App\Enum\MediaCollection::PROJECT_IMAGES->value)?->take(1) as $media) {{ $media->getUrl() }} @endforeach">
         <div class="container">
-            <div class="breadcumb-content"><h1 class="breadcumb-title">Project Details</h1>
-                <ul class="breadcumb-menu">
-                    <li><a href="{{ route('home') }}">Home</a></li>
-                    <li><a href="{{ route('projects') }}">Projects</a></li>
-                    <li>Project Details</li>
-                </ul>
+            <div class="breadcumb-content">
+                {{--                <h1 class="breadcumb-title">Project Details</h1>--}}
+                {{--                <ul class="breadcumb-menu">--}}
+                {{--                    <li><a href="{{ route('home') }}">Home</a></li>--}}
+                {{--                    <li><a href="{{ route('projects') }}">Projects</a></li>--}}
+                {{--                    <li>Project Details</li>--}}
+                {{--                </ul>--}}
             </div>
         </div>
     </div>
@@ -53,7 +54,7 @@
                                     <div class="icon-btn"><i class="fa-solid fa-user"></i></div>
                                     <div class="media-body"><p class="contact-feature_label">Client:</p>
                                         <a class="contact-feature_link">
-                                            {{ $project?->client?->first_name . " " .$project?->client?->last_name }}
+                                            {{ $project?->client?->first_name }}
                                         </a>
                                     </div>
                                 </div>

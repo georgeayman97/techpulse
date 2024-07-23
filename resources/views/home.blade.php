@@ -24,152 +24,152 @@
         <div class="hero-shape2"><img src="{{ asset('assets/img/hero/hero_shape_2_2.png') }}" alt="shape"></div>
         <div class="hero-shape3"><img src="{{ asset('assets/img/hero/hero_shape_2_3.png') }}" alt="shape"></div>
     </div>
-    <section class="space-top">
-        <div class="container z-index-common">
-            <div class="title-area text-center"><span class="sub-title">
-                    <div class="icon-masking me-2">
-                        <span class="mask-icon"
-                              data-mask-src="{{ asset('assets/img/theme-img/title_shape_1.svg') }}"></span>
-                        <img src="https://html.themeholy.com/webteck/demo/assets/img/theme-img/title_shape_1.svg"
-                             alt="shape">OUR TECHNOLOGIES
-                    </div>
-                </span>
+    {{--    <section class="space-top">--}}
+    {{--        <div class="container z-index-common">--}}
+    {{--            <div class="title-area text-center"><span class="sub-title">--}}
+    {{--                    <div class="icon-masking me-2">--}}
+    {{--                        <span class="mask-icon"--}}
+    {{--                              data-mask-src="{{ asset('assets/img/theme-img/title_shape_1.svg') }}"></span>--}}
+    {{--                        <img src="https://html.themeholy.com/webteck/demo/assets/img/theme-img/title_shape_1.svg"--}}
+    {{--                             alt="shape">OUR TECHNOLOGIES--}}
+    {{--                    </div>--}}
+    {{--                </span>--}}
 
-                <div class="slider-area">
-                    <div class="swiper th-slider has-shadow"
-                         data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}}}'>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_1.svg"
-                                                alt="Icon"> <span class="dots"></span></div>
-                                        <h3 class="box-title"><a href="{{ route('service') }}">Python</a></h3>
-                                        <a href="{{ route('service') }}"
-                                           class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_2.svg"
-                                                alt="Icon"> <span class="dots"></span></div>
-                                        <h3 class="box-title"><a href="service-details.html">Laravel</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_3.svg"
-                                                alt="Icon"> <span class="dots"></span></div>
-                                        <h3 class="box-title"><a href="service-details.html">Node Js</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a></div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">.Net</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">React Js</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">Angular</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">Vue Js</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">Flutter</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">Android</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="service-featured">
-                                    <div class="service-featured_content">
-                                        <div class="shape-icon"><img
-                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"
-                                                alt="Icon"> <span class="dots"></span>
-                                        </div>
-                                        <h3 class="box-title"><a href="service-details.html">IOS</a></h3>
-                                        <a href="service-details.html" class="icon-btn">
-                                            <i class="fa-regular fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+    {{--                <div class="slider-area">--}}
+    {{--                    <div class="swiper th-slider has-shadow"--}}
+    {{--                         data-slider-options='{"loop":true,"breakpoints":{"0":{"slidesPerView":1},"576":{"slidesPerView":"1"},"768":{"slidesPerView":"2"},"992":{"slidesPerView":"3"},"1200":{"slidesPerView":"3"}}}'>--}}
+    {{--                        <div class="swiper-wrapper">--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_1.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span></div>--}}
+    {{--                                        <h3 class="box-title"><a href="{{ route('service') }}">Python</a></h3>--}}
+    {{--                                        <a href="{{ route('service') }}"--}}
+    {{--                                           class="icon-btn"><i class="fa-regular fa-arrow-right"></i></a></div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_2.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span></div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Laravel</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a></div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_3.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span></div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Node Js</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a></div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">.Net</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">React Js</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Angular</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Vue Js</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Flutter</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">Android</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
+    {{--                            <div class="swiper-slide">--}}
+    {{--                                <div class="service-featured">--}}
+    {{--                                    <div class="service-featured_content">--}}
+    {{--                                        <div class="shape-icon"><img--}}
+    {{--                                                src="https://html.themeholy.com/webteck/demo/assets/img/icon/service_featured_4.svg"--}}
+    {{--                                                alt="Icon"> <span class="dots"></span>--}}
+    {{--                                        </div>--}}
+    {{--                                        <h3 class="box-title"><a href="service-details.html">IOS</a></h3>--}}
+    {{--                                        <a href="service-details.html" class="icon-btn">--}}
+    {{--                                            <i class="fa-regular fa-arrow-right"></i></a>--}}
+    {{--                                    </div>--}}
+    {{--                                </div>--}}
+    {{--                            </div>--}}
 
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {{--                        </div>--}}
+    {{--                    </div>--}}
+    {{--                </div>--}}
+    {{--            </div>--}}
+    {{--        </div>--}}
+    {{--    </section>--}}
     <div class="space" id="about-sec">
         <div class="container">
             <div class="row align-items-center">

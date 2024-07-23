@@ -2,3 +2,12 @@
     max-width: 160% !important;
     height: 85px !important;
 }
+
+.contact-feature_label {
+    margin-bottom: 0;
+    font-size: 20px;
+}
+
+.contact-feature_link {
+    font-size: 14px;
+}

@@ -58,21 +58,39 @@
 {{--        <button data-color="#8a2be2"><i class="fa-solid fa-droplet"></i></button>--}}
 {{--    </div>--}}
 {{--    <a href="https://themeforest.net/user/themeholy" class="th-btn text-center w-100"><i--}}
-{{--            class="fa fa-shopping-cart me-2"></i> Purchase</a></div>--}}
-{{--<div id="preloader" class="preloader">--}}
-{{--    <button class="th-btn th-radius preloaderCls">Cancel Preloader</button>--}}
-{{--    <div id="loader" class="th-preloader">--}}
-{{--        <div class="animation-preloader">--}}
-{{--            <div class="txt-loading"><span preloader-text="W" class="characters">W</span> <span preloader-text="E"--}}
-{{--                                                                                                class="characters">E</span>--}}
-{{--                <span preloader-text="B" class="characters">B</span> <span preloader-text="T"--}}
-{{--                                                                           class="characters">T</span> <span--}}
-{{--                    preloader-text="E" class="characters">E</span> <span preloader-text="C"--}}
-{{--                                                                         class="characters">C</span> <span--}}
-{{--                    preloader-text="K" class="characters">K</span></div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
+{{--            class="fa fa-shopping-cart me-2"></i> Purchase</a>--}}
 {{--</div>--}}
+<div id="preloader" class="preloader">
+    <button class="th-btn th-radius preloaderCls">Cancel Preloader</button>
+    <div id="loader" class="th-preloader">
+        <div class="animation-preloader">
+            <div class="txt-loading">
+                <span preloader-text="T" class="characters">T</span>
+                <span preloader-text="E" class="characters">E</span>
+                <span preloader-text="C" class="characters">C</span>
+                <span preloader-text="H" class="characters">H</span>
+                <span preloader-text="P" class="characters">P</span>
+                <span preloader-text="U" class="characters">U</span>
+                <span preloader-text="L" class="characters">L</span>
+                <span preloader-text="S" class="characters">S</span>
+                <span preloader-text="E" class="characters">E</span>
+            </div>
+            <div class="txt-loading">
+                <span preloader-text="S" class="characters">S</span>
+                <span preloader-text="O" class="characters">O</span>
+                <span preloader-text="L" class="characters">L</span>
+                <span preloader-text="U" class="characters">U</span>
+                <span preloader-text="T" class="characters">T</span>
+                <span preloader-text="I" class="characters">I</span>
+                <span preloader-text="O" class="characters">O</span>
+                <span preloader-text="N" class="characters">N</span>
+                <span preloader-text="S" class="characters">S</span>
+
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="sidemenu-wrapper">
     <div class="sidemenu-content">
         <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
@@ -128,6 +146,7 @@
         </div>
     </div>
 </div>
+
 <x-header/>
 
 @yield('content')
@@ -141,63 +160,63 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_1.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-alahly-sabour.svg') }}"
+                                alt="AL AHLY SABOUR"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_2.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-opm.png') }}"
+                                alt="OPM"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box" style="margin-top: -30px;"><img
+                                src="{{ asset('assets/logos/logo-jrny.png') }}"
+                                alt="JRNY"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box" style="margin-top: -53px;"><img
+                                src="{{ asset('assets/logos/logo-msl.png') }}"
+                                alt="MSL"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_3.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-khodar.png') }}"
+                                alt="Khodar"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_4.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-wecre8.svg') }}"
+                                alt="WE CRE8"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box"><img style="height: 90px;"
+                                                    src="{{ asset('assets/logos/logo-top-sports.png') }}"
+                                                    alt="TOP SPORTS"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_5.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-alahly-sabour.svg') }}"
+                                alt="AL AHLY SABOUR"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_6.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-opm.png') }}"
+                                alt="OPM"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="brand-box" style="margin-top: -30px;"><img
+                                src="{{ asset('assets/logos/logo-jrny.png') }}"
+                                alt="JRNY"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_1.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-khodar.png') }}"
+                                alt="Khodar"></div>
                     </div>
                     <div class="swiper-slide">
                         <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_2.png"
-                                alt="Brand Logo"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_3.png"
-                                alt="Brand Logo"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_4.png"
-                                alt="Brand Logo"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_5.png"
-                                alt="Brand Logo"></div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="brand-box"><img
-                                src="https://html.themeholy.com/webteck/demo/assets/img/brand/brand_1_6.png"
-                                alt="Brand Logo"></div>
+                                src="{{ asset('assets/logos/logo-wecre8.svg') }}"
+                                alt="WE CRE8"></div>
                     </div>
                 </div>
             </div>

@@ -73,42 +73,44 @@
                                 <li><a href="{{ route('about-us') }}">@lang('lang.About Us')</a></li>
                                 <li><a href="{{ route('service') }}">@lang('lang.Services')</a></li>
                                 <li><a href="{{ route('projects') }}">@lang('lang.Projects')</a></li>
-                                @if(LaravelLocalization::getCurrentLocale() == "en")
-                                    <li class="menu-item-has-children"><a>@lang('lang.ENGLISH')</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("sw", null, [], true) }}">@lang('lang.SWEDISH')</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("sp", null, [], true) }}">@lang('lang.SPANISH')</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                @elseif(LaravelLocalization::getCurrentLocale() == "sw")
-                                    <li class="menu-item-has-children"><a>@lang('lang.SWEDISH')</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("en", null, [], true) }}">@lang('lang.ENGLISH')</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("sp", null, [], true) }}">@lang('lang.SPANISH')</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                @else
-                                    <li class="menu-item-has-children"><a>@lang('lang.SPANISH')</a>
-                                        <ul class="sub-menu">
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("en", null, [], true) }}">@lang('lang.ENGLISH')</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ LaravelLocalization::getLocalizedURL("sw", null, [], true) }}">@lang('lang.SWEDISH')</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                @endif
+                                {{--                                @if(LaravelLocalization::getCurrentLocale() == "en")--}}
+                                {{--                                    <li class="menu-item-has-children"><a>@lang('lang.ENGLISH')</a>--}}
+                                {{--                                        <ul class="sub-menu">--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("sw", null, [], true) }}">@lang('lang.SWEDISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("sp", null, [], true) }}">@lang('lang.SPANISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                        </ul>--}}
+                                {{--                                    </li>--}}
+                                {{--                                @elseif(LaravelLocalization::getCurrentLocale() == "sw")--}}
+                                {{--                                    <li class="menu-item-has-children"><a>@lang('lang.SWEDISH')</a>--}}
+                                {{--                                        <ul class="sub-menu">--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("en", null, [], true) }}">@lang('lang.ENGLISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("sp", null, [], true) }}">@lang('lang.SPANISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                        </ul>--}}
+                                {{--                                    </li>--}}
+                                {{--                                @else--}}
+                                {{--                                    <li class="menu-item-has-children"><a>@lang('lang.SPANISH')</a>--}}
+                                {{--                                        <ul class="sub-menu">--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("en", null, [], true) }}">@lang('lang.ENGLISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                            <li>--}}
+                                {{--                                                <a href="{{ LaravelLocalization::getLocalizedURL("sw", null, [], true) }}">@lang('lang.SWEDISH')</a>--}}
+                                {{--                                            </li>--}}
+                                {{--                                        </ul>--}}
+                                {{--                                    </li>--}}
+                                {{--                                @endif--}}
                             </ul>
                         </nav>
+                        <button type="button" class="th-menu-toggle d-inline-block d-lg-none"><i
+                                class="fal fa-bars"></i></button>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-button">

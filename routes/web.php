@@ -3,6 +3,7 @@
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
@@ -29,4 +30,8 @@ Route::group([
     Route::get('service', fn() => view('pages.service'))->name('service');
     Route::get('projects', [ProjectController::class, 'index'])->name('projects');
     Route::get('projects/{slug}', [ProjectController::class, 'show'])->name('projects.show');
+});
+Route::get('optimize', function () {
+    Artisan::call('optimize:clear');
+    dd("Optimize clear command executed");
 });

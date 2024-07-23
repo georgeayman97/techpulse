@@ -79,7 +79,8 @@
             <div class="row gy-40 justify-content-between">
                 <div class="col-6 col-lg-auto">
                     <div class="counter-card">
-                        <div class="counter-card_icon"><img src="assets/img/icon/counter_1_1.svg" alt="Icon"></div>
+                        <div class="counter-card_icon"><img src="{{ asset('assets/img/icon/counter_1_1.svg') }}"
+                                                            alt="Icon"></div>
                         <div class="media-body"><h2 class="counter-card_number"><span class="counter-number">986</span>+
                             </h2>
                             <p class="counter-card_text">Finished Project</p></div>
@@ -87,7 +88,8 @@
                 </div>
                 <div class="col-6 col-lg-auto">
                     <div class="counter-card">
-                        <div class="counter-card_icon"><img src="assets/img/icon/counter_1_2.svg" alt="Icon"></div>
+                        <div class="counter-card_icon"><img src="{{ asset('assets/img/icon/counter_1_2.svg') }}"
+                                                            alt="Icon"></div>
                         <div class="media-body"><h2 class="counter-card_number"><span class="counter-number">896</span>+
                             </h2>
                             <p class="counter-card_text">Happy Clients</p></div>
@@ -95,7 +97,8 @@
                 </div>
                 <div class="col-6 col-lg-auto">
                     <div class="counter-card">
-                        <div class="counter-card_icon"><img src="assets/img/icon/counter_1_3.svg" alt="Icon"></div>
+                        <div class="counter-card_icon"><img src="{{ asset('assets/img/icon/counter_1_3.svg') }}"
+                                                            alt="Icon"></div>
                         <div class="media-body"><h2 class="counter-card_number"><span class="counter-number">396</span>+
                             </h2>
                             <p class="counter-card_text">Skilled Experts</p></div>
@@ -138,16 +141,16 @@
                     <div class="two-column">
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> Quick Efficient Delivery</li>
-                                <li><i class="far fa-check"></i> 24/7 Online Support</li>
-                                <li><i class="far fa-check"></i> Business Improvement</li>
+                                <li><i class="fal fa-check"></i> Quick Efficient Delivery</li>
+                                <li><i class="fal fa-check"></i> 24/7 Online Support</li>
+                                <li><i class="fal fa-check"></i> Business Improvement</li>
                             </ul>
                         </div>
                         <div class="checklist style2">
                             <ul>
-                                <li><i class="far fa-check"></i> High Quality Security</li>
-                                <li><i class="far fa-check"></i> 24/7 Support Team</li>
-                                <li><i class="far fa-check"></i> Easy Solutions</li>
+                                <li><i class="fal fa-check"></i> High Quality Security</li>
+                                <li><i class="fal fa-check"></i> 24/7 Support Team</li>
+                                <li><i class="fal fa-check"></i> Easy Solutions</li>
                             </ul>
                         </div>
                     </div>
@@ -171,94 +174,68 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">David Farnandes</h3>
-                                    <p class="testi-grid_desig">CEO at Anaton</p></div>
+                                <div class="testi-grid_content"><p class="testi-grid_text">Word Reward has
+                                        revolutionized our loyalty programs in the medical field. The app's seamless
+                                        integration and user-friendly interface have made it incredibly easy for our
+                                        clients to earn and redeem rewards. The team's dedication to delivering
+                                        top-notch solutions is evident in every aspect of the app. Highly
+                                        recommended!<br></p>
+                                    <h3 class="box-title">WordReward</h3>
+                                    <p class="testi-grid_desig">CEO</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Jackline Techie</h3>
-                                    <p class="testi-grid_desig">CEO at Kormola</p></div>
+                                <div class="testi-grid_content"><p class="testi-grid_text">Khodar's new platform has
+                                        significantly boosted our online presence and sales. The intuitive design and
+                                        smooth functionality have greatly enhanced our customers' shopping experience.
+                                        TechPulse Solutions delivered an outstanding product that exceeded our
+                                        expectations. Their expertise and attention to detail are unmatched! </p>
+                                    <h3 class="box-title">Khodar</h3>
+                                    <p class="testi-grid_desig">CEO</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p></div>
+                                <div class="testi-grid_content"><p class="testi-grid_text">The Top Sports app is a
+                                        game-changer for sports enthusiasts. Not only does it provide the latest sports
+                                        news, but it also allows users to book playgrounds and join groups easily. The
+                                        added features for team management are fantastic. TechPulse Solutions truly
+                                        understands our needs and delivered an exceptional
+                                        product.</p>
+                                    <h3 class="box-title">Top Sports</h3>
+                                    <p class="testi-grid_desig">CEO</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p></div>
+                                <div class="testi-grid_content"><p class="testi-grid_text">Our new website developed by
+                                        TechPulse Solutions is visually stunning and highly functional. The site's
+                                        modern design and user-friendly interface have received positive feedback from
+                                        both our team and our clients. The professionalism and creativity of the
+                                        TechPulse team are evident in every detail.</p>
+                                    <h3 class="box-title">WeCre8</h3>
+                                    <p class="testi-grid_desig">Marketing Manager</p></div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p></div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testi-grid">
-                                <div class="testi-grid_content"><p class="testi-grid_text">Objectively visualize
-                                        error-free
-                                        technology for B2B alignment. Monotonectally harness an expanded array of models
-                                        via
-                                        effective collaboration. Globally synergize resource sucking value via
-                                        cutting-edge.</p>
-                                    <h3 class="box-title">Abraham Khalil</h3>
-                                    <p class="testi-grid_desig">CEO at Anatora</p></div>
+                                <div class="testi-grid_content"><p class="testi-grid_text">TechPulse Solutions
+                                        transformed our vision into a beautiful and effective website. The OPM Makeup
+                                        site is not only visually appealing but also easy to navigate, which has
+                                        improved our customer engagement significantly. The team was responsive,
+                                        professional, and a pleasure to work with. We highly recommend their
+                                        services!<br></p>
+                                    <h3 class="box-title">OPM Makeup</h3>
+                                    <p class="testi-grid_desig">Founder</p></div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <button data-slider-prev="#testiSlider3" class="slider-arrow style3 slider-prev"><i
-                        class="far fa-arrow-left"></i></button>
+                        class="fal fa-arrow-left"></i></button>
                 <button data-slider-next="#testiSlider3" class="slider-arrow style3 slider-next"><i
-                        class="far fa-arrow-right"></i></button>
+                        class="fal fa-arrow-right"></i></button>
             </div>
         </div>
     </section>
